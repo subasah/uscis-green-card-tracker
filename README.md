@@ -1,6 +1,6 @@
 # Voice AI Agent — Learning Project
 
-A real-time voice AI agent that mirrors the architecture of LibMIA at every layer.
+A real-time voice AI agent that mirrors the architecture of AI at every layer.
 Built with Python + Pipecat + Gemini Live + Daily.co.
 
 ---
@@ -23,13 +23,13 @@ A browser tab is your phone. A Python process is the AI agent.
 Both meet inside a Daily.co WebRTC room. Gemini Live handles everything:
 it listens to your voice, thinks, and speaks back — all in real time.
 
-> This mirrors LibMIA's architecture minus Twilio, Orkes, and multi-process complexity.
+> This mirrors AI's architecture minus Twilio, Orkes, and multi-process complexity.
 
 ---
 
 ## Tech Stack
 
-| Component | LibMIA Uses | This App Uses | Notes |
+| Component | AI Uses | This App Uses | Notes |
 |---|---|---|---|
 | Pipeline engine | Pipecat 1.1.0 | Same | Same package |
 | Transport | Daily.co | Same | Same |
@@ -101,21 +101,21 @@ voice-agent/
 
 ---
 
-## LibMIA Equivalence Map
+## AI Equivalence Map
 
-| This App | LibMIA Equivalent | LibMIA File |
+| This App | AI Equivalent | AI File |
 |---|---|---|
-| `BotCore` | `BotCore` + `OutboundBotCore` | `libmia/common/core/BotCore.py` |
-| `ConfigSettingsLayer` | `BotCoreSettingsLayer` | `libmia/common/core/BotCoreSettingsLayer.py` |
-| `PromptProvider` | `PromptProvider` | `libmia/common/core/providers/PromptProvider.py` |
-| `ToolTemplate` | `ToolTemplate` | `libmia/common/core/tools/ToolTemplate.py` |
-| `ExecutionStrategy` | `ExecutionStrategy` | `libmia/common/core/tools/ExecutionStrategy.py` |
-| `SwarmContext` (deque) | `SwarmContext` (shared memory ring buffer) | `libmia/llm/swarm/context/SwarmContext.py` |
-| `SwarmAgent` | `SwarmAgent` | `libmia/llm/swarm/SwarmAgent.py` |
-| `DetectionPipe` (asyncio.Task) | `ForkPipe` (subprocess) | `libmia/common/pipes/ForkPipe.py` |
-| `on_classification` callback | `BifrostClient.send_event(HumanDetectedEvent())` | `libmia/common/core/communication/` |
-| `run.py` | `CallHandlerInitializer` + `ConductorPollingClient` | `libmia/orkes/` |
-| Daily.co room (browser join) | Twilio PSTN → Daily.co SIP bridge | `libmia/common/core/bots/OutboundBotCore.py` |
+| `BotCore` | `BotCore` + `OutboundBotCore` | `AI/common/core/BotCore.py` |
+| `ConfigSettingsLayer` | `BotCoreSettingsLayer` | `AI/common/core/BotCoreSettingsLayer.py` |
+| `PromptProvider` | `PromptProvider` | `AI/common/core/providers/PromptProvider.py` |
+| `ToolTemplate` | `ToolTemplate` | `AI/common/core/tools/ToolTemplate.py` |
+| `ExecutionStrategy` | `ExecutionStrategy` | `AI/common/core/tools/ExecutionStrategy.py` |
+| `SwarmContext` (deque) | `SwarmContext` (shared memory ring buffer) | `AI/llm/swarm/context/SwarmContext.py` |
+| `SwarmAgent` | `SwarmAgent` | `AI/llm/swarm/SwarmAgent.py` |
+| `DetectionPipe` (asyncio.Task) | `ForkPipe` (subprocess) | `AI/common/pipes/ForkPipe.py` |
+| `on_classification` callback | `BifrostClient.send_event(HumanDetectedEvent())` | `AI/common/core/communication/` |
+| `run.py` | `CallHandlerInitializer` + `ConductorPollingClient` | `AI/orkes/` |
+| Daily.co room (browser join) | Twilio PSTN → Daily.co SIP bridge | `AI/common/core/bots/OutboundBotCore.py` |
 
 ---
 
@@ -149,7 +149,7 @@ python src/run.py
 ```
 
 **Pattern learned:** `BotCore.run()` calls `build_prompt_provider()` → `build_pipeline()` → `PipelineRunner.run(task)`.
-This is the same call sequence as LibMIA's `BotCore`.
+This is the same call sequence as AI's `BotCore`.
 
 ---
 
@@ -171,7 +171,7 @@ BotCore(config)
 ```
 
 `@cached_property` means each setting is parsed from the dict **exactly once per instance**.
-This is identical to LibMIA's `BotCoreSettingsLayer` mixin chain.
+This is identical to AI's `BotCoreSettingsLayer` mixin chain.
 
 ---
 
@@ -193,7 +193,7 @@ User stops speaking
 - `LatencyObserver` — logs bot response latency (user stops → bot starts)
 - `InterruptionObserver` — watches `VADUserStartedSpeakingFrame` to set the interruption event
 
-**Pattern learned:** In LibMIA, `ExecutionStrategy.with_wait_for_interruption` guards every
+**Pattern learned:** In AI, `ExecutionStrategy.with_wait_for_interruption` guards every
 LLM tool call to prevent expensive API calls when the user already said "never mind".
 
 ---
@@ -222,7 +222,7 @@ User: "I have a question about my payment"
   → User: "actually never mind" → return_to_main_agent restores original prompt
 ```
 
-**Pattern learned:** In LibMIA, `SwarmPipe` runs in a **separate subprocess**.
+**Pattern learned:** In AI, `SwarmPipe` runs in a **separate subprocess**.
 `SwarmContext` uses `multiprocessing.shared_memory` so agents in different processes
 share the same transcript. Here we skip the multiprocessing — the routing logic is identical.
 
@@ -242,13 +242,13 @@ Transport audio frames
   → on_classification callback → BotCore reacts
 ```
 
-**Why LibMIA uses a subprocess instead of asyncio.Task:**
+**Why AI uses a subprocess instead of asyncio.Task:**
 
 > Gemini Live uses gRPC which holds the Python GIL and blocks the event loop.
 > A subprocess gets its own GIL and its own event loop, so the main conversation
 > is never blocked by the classifier running in parallel.
 
-**LibMIA's full ForkPipe tree (OutboundBotCore):**
+**AI's full ForkPipe tree (OutboundBotCore):**
 ```
 IVRDetectionPipe
   └─ VoicemailDetectionPipe
@@ -268,7 +268,7 @@ irrelevant frames.
 
 ## The Core Mental Model
 
-Everything in both this app and LibMIA answers the same question at every step:
+Everything in both this app and AI answers the same question at every step:
 
 > **What type of frame is this, and where should it go next?**
 
