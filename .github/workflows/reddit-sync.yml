@@ -1,0 +1,28 @@
+name: Sync Reddit feed
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch r/EB2_NIW RSS feed
+        run: node scripts/sync-reddit.mjs
+
+      - name: Commit updated feed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: sync r/EB2_NIW Reddit feed'
+          file_pattern: public/data/reddit-eb2niw.json
