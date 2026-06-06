@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const SUBREDDIT = 'EB2_NIW';
 const RSS_URL = `https://www.reddit.com/r/${SUBREDDIT}/.rss`;
-const USER_AGENT = 'uscis-green-card-tracker/1.0 (community dashboard; github.com/subasah/uscis-green-card-tracker)';
+const USER_AGENT = 'uscis-green-card-tracker/1.0 (community dashboard; github.com/uscis-green-card-tracker)';
 const OUTPUT = path.join(path.dirname(fileURLToPath(import.meta.url)), '../public/data/reddit-eb2niw.json');
 
 const TOPIC_RULES = [
