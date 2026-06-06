@@ -1,8 +1,10 @@
-# I-485 Status Explorer
+# USCIS Green Card Tracker
 
 A React dashboard that **combines your private USCIS case JSON** with **community I-485 tracker data** from the [I-485 Status Filer](https://docs.google.com/spreadsheets/d/1rg0ZqadJ3_fd8pWQ9WoDpzZCU6KQEJ5vX1vUkd0DKXI/htmlview) spreadsheet.
 
-**Live site:** https://subasah.github.io/voice-agent/
+**Live site:** https://subasah.github.io/uscis-green-card-tracker/
+
+Inspired by tools like the [USCIS Case Status Tracker](https://uscis-tracker.github.io/), with added community spreadsheet trends, block matching, and r/EB2_NIW Reddit insights.
 
 ## Two data sources · One picture
 
@@ -47,8 +49,8 @@ npm run sync:reddit
 
 Pushes to `main` trigger the GitHub Actions workflow (`.github/workflows/deploy.yml`), which builds and deploys to Pages.
 
-Site URL: `https://<username>.github.io/voice-agent/` (repo name must match `base` in `vite.config.js`).
+Site URL: `https://<username>.github.io/uscis-green-card-tracker/` (repo name must match `base` in `vite.config.js`).
 
 ## Disclaimer
 
-Community-reported data for informational purposes only. Not legal advice or official USCIS processing times.
+Community-reported data for informational purposes only. Not legal advice or official USCIS processing times. This tool is not affiliated with USCIS.

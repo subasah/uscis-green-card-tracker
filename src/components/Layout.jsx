@@ -2,10 +2,10 @@ export function Header({ lastUpdated, loading, onRefresh, errors, stats }) {
   return (
     <header className="app-header">
       <div className="header-copy">
-        <p className="eyebrow">Community I-485 tracker</p>
-        <h1>I-485 Status Explorer</h1>
+        <p className="eyebrow">USCIS · I-485 · Community data</p>
+        <h1>USCIS Green Card Tracker</h1>
         <p>
-          Compare your USCIS case with community I-485 tracker data — timelines, block numbers, approval estimates, and next steps.
+          Analyze your USCIS case JSON and compare it with community I-485 tracker data — timelines, block numbers, approval estimates, and next steps.
         </p>
         {stats ? (
           <p className="header-stats">
