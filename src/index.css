@@ -231,6 +231,7 @@
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: clip;
 }
 
 button,
@@ -2623,6 +2624,84 @@ tbody tr.selected {
   font-size: 0.72rem;
 }
 
+.app-title-short {
+  display: none;
+}
+
+.chat-label-short {
+  display: none;
+}
+
+.case-results-cards {
+  display: none;
+}
+
+.case-result-card {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  background: var(--surface-elevated);
+  color: inherit;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.case-result-card:hover,
+.case-result-card.selected {
+  border-color: var(--accent);
+  background: var(--row-hover);
+}
+
+.case-result-card.selected {
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.case-result-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.case-result-card-head strong {
+  font-size: 1rem;
+  color: var(--text-strong);
+}
+
+.case-result-card-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  margin: 0;
+}
+
+.case-result-card-meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.case-result-card-meta dt {
+  color: var(--text-subtle);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.case-result-card-meta dd {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @media (max-width: 960px) {
   .app-shell {
     padding: 10px 14px 36px;
@@ -2676,14 +2755,99 @@ tbody tr.selected {
   }
 }
 
+@media (max-width: 768px) {
+  .case-results-table {
+    display: none;
+  }
+
+  .case-results-cards {
+    display: grid;
+    gap: 10px;
+  }
+}
+
 @media (max-width: 640px) {
+  .app-title-full {
+    display: none;
+  }
+
+  .app-title-short {
+    display: inline;
+  }
+
+  .chat-label-full {
+    display: none;
+  }
+
+  .chat-label-short {
+    display: inline;
+  }
+
   .app-title {
     font-size: 0.95rem;
   }
 
+  .app-shell {
+    padding: 8px max(12px, env(safe-area-inset-right)) max(32px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  }
+
+  .app-header-inner {
+    padding: 6px max(12px, env(safe-area-inset-right)) 0 max(12px, env(safe-area-inset-left));
+  }
+
+  .app-topbar {
+    padding: 8px 10px 6px;
+    border-radius: 12px;
+  }
+
+  .app-topbar-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .app-topbar-tools {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .theme-switch button {
+    padding: 6px 8px;
+    font-size: 0.72rem;
+    min-height: 36px;
+  }
+
+  .toolbar-button {
+    min-height: 40px;
+    padding: 8px 12px;
+  }
+
   .tab-nav-compact button {
-    padding: 7px 9px;
+    padding: 8px 10px;
     font-size: 0.78rem;
+    min-height: 40px;
+  }
+
+  .finder-panel,
+  .panel {
+    padding: 14px 12px;
+    border-radius: 14px;
+  }
+
+  .data-refresh-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .data-refresh-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .filter-bar {
+    padding: 12px;
   }
 
   .filter-bar-community .filter-bar-fields,
@@ -2691,7 +2855,173 @@ tbody tr.selected {
     grid-template-columns: 1fr;
   }
 
+  .chart-grid,
+  .detail-grid,
+  .finder-form,
+  .filters,
+  .filters-grid,
+  .reddit-filters,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .case-step-track {
     grid-template-columns: 1fr;
+  }
+
+  .panel-header,
+  .case-results-hero,
+  .action-plan-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .panel-header-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .detail-list div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .detail-list dd {
+    text-align: left;
+  }
+
+  .similar-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .case-editor-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .case-workspace-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .case-file-button,
+  .case-analyze-button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .case-hero-actions {
+    width: 100%;
+  }
+
+  .case-hero-actions .toolbar-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .guidance-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .chart-card {
+    min-height: 260px;
+    padding: 12px;
+  }
+
+  .case-drawer,
+  .chat-panel {
+    width: 100%;
+    max-width: 100%;
+    border-left: 0;
+    border-radius: 0;
+  }
+
+  .case-drawer-overlay,
+  .chat-overlay {
+    align-items: flex-end;
+  }
+
+  .case-drawer {
+    max-height: 92dvh;
+    height: 92dvh;
+    border-top: 1px solid var(--border);
+    border-radius: 16px 16px 0 0;
+    animation: case-drawer-up 0.24s ease-out;
+  }
+
+  .chat-panel {
+    max-height: 100dvh;
+    height: 100dvh;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .case-drawer-header,
+  .case-drawer-scroll {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+
+  .chat-compose-compact {
+    padding-bottom: max(14px, env(safe-area-inset-bottom));
+  }
+
+  .chat-compose-hint {
+    font-size: 0.68rem;
+  }
+
+  .case-leaflet-map,
+  .case-map-placeholder {
+    height: 280px;
+    min-height: 280px;
+  }
+
+  .h-timeline-item {
+    min-width: 84px;
+  }
+
+  .reddit-post-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .app-footer {
+    padding: 16px 4px 0;
+    font-size: 0.8rem;
+  }
+}
+
+@keyframes case-drawer-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0.6;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 380px) {
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-result-card-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-nav-compact button {
+    padding: 7px 8px;
+    font-size: 0.74rem;
   }
 }

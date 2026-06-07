@@ -20,6 +20,45 @@ export default function CaseResultsTable({
   }
 
   return (
+    <>
+    <div className="case-results-cards" aria-label="Community cases">
+      {visibleCases.map((record) => {
+        const selected = record.id === selectedId;
+        return (
+          <button
+            key={record.id}
+            type="button"
+            className={`case-result-card${selected ? ' selected' : ''}`}
+            onClick={() => onSelectCase(record)}
+            aria-pressed={selected}
+          >
+            <div className="case-result-card-head">
+              <strong>{record.blockNumber || record.category || '—'}</strong>
+              <span className={`badge badge-${record.status}`}>{statusLabel(record.status)}</span>
+            </div>
+            <dl className="case-result-card-meta">
+              <div>
+                <dt>Tab</dt>
+                <dd>{record.sheetName || '—'}</dd>
+              </div>
+              <div>
+                <dt>Category</dt>
+                <dd>{record.category || '—'}</dd>
+              </div>
+              <div>
+                <dt>Receipt</dt>
+                <dd>{formatDate(record.receiptDate)}</dd>
+              </div>
+              <div>
+                <dt>GC approval</dt>
+                <dd>{formatDate(record.gcApprovalDate)}</dd>
+              </div>
+            </dl>
+          </button>
+        );
+      })}
+    </div>
+
     <div className="table-wrap case-results-table">
       <table>
         <thead>
@@ -69,5 +108,6 @@ export default function CaseResultsTable({
         </tbody>
       </table>
     </div>
+    </>
   );
 }

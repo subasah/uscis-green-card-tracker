@@ -21,7 +21,10 @@ export function AppTopBar({ activeTab, onChange, themePreference, onThemeChange,
     <header className="app-topbar">
       <div className="app-topbar-row">
         <div className="app-brand">
-          <h1 className="app-title">USCIS Green Card Tracker</h1>
+          <h1 className="app-title">
+            <span className="app-title-full">USCIS Green Card Tracker</span>
+            <span className="app-title-short">USCIS Tracker</span>
+          </h1>
           <p className="app-tagline">Community I-485 insights · processed locally in your browser</p>
         </div>
         <div className="app-topbar-tools">

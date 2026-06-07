@@ -13,7 +13,8 @@ export default function ChatPresenceBar({ onlineCount, onOpenChat, configured })
       aria-label="Open community chat"
     >
       <span className="chat-dot chat-dot-green" aria-hidden="true" />
-      {label}
+      <span className="chat-label-full">{label}</span>
+      <span className="chat-label-short">Chat</span>
     </button>
   );
 }
