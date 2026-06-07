@@ -9,7 +9,9 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import FilterBar from './FilterBar';
 import { formatReceiptMonthLabel } from '../config';
+import { TRENDS_FILTER_DEFAULTS } from '../utils/filterHelpers';
 import { average, formatDate, median, monthLabel } from '../utils/dates';
 import { getChartTheme } from '../utils/theme';
 
@@ -48,13 +50,20 @@ function describeActiveFilters(filters) {
   if (filters.country !== 'all') parts.push(filters.country);
   if (filters.category !== 'all') parts.push(filters.category);
   if (filters.status !== 'all') parts.push(filters.status.replace('_', ' '));
-  if (filters.fieldOffice !== 'all') parts.push(filters.fieldOffice);
-  if (filters.query) parts.push(`"${filters.query}"`);
+  if (filters.country !== 'all') parts.push(filters.country);
 
   return parts;
 }
 
-export default function Dashboard({ insights, cases, filters, chartKey, theme = 'dark' }) {
+export default function Dashboard({
+  insights,
+  cases,
+  filters,
+  filterOptions,
+  onFiltersChange,
+  chartKey,
+  theme = 'dark',
+}) {
   const chartTheme = getChartTheme(theme);
   const categoryData = insights.byCategory.slice(0, 8).map((item) => ({
     name: item.name,
@@ -92,18 +101,26 @@ export default function Dashboard({ insights, cases, filters, chartKey, theme = 
 
   return (
     <section className="panel">
-      <div className="panel-header">
+      <div className="panel-header panel-header-compact">
         <div>
-          <h2>Dashboard</h2>
-          <p>Community-reported processing patterns across all tracker tabs.</p>
+          <h2>Approval trends</h2>
+          <p>Median processing times and approval patterns from community data.</p>
           {activeFilters.length ? (
             <p className="filter-summary">
-              Filtered by {activeFilters.join(' · ')} · {insights.totalCases} case
+              {activeFilters.join(' · ')} · {insights.totalCases} case
               {insights.totalCases === 1 ? '' : 's'}
             </p>
           ) : null}
         </div>
       </div>
+
+      <FilterBar
+        variant="trends"
+        values={filters}
+        options={filterOptions}
+        onChange={onFiltersChange}
+        onClear={() => onFiltersChange(TRENDS_FILTER_DEFAULTS)}
+      />
 
       <div className="stat-grid">
         <StatCard label="Total cases" value={insights.totalCases} />

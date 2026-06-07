@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import ActionPlan from './ActionPlan';
+import CaseDetailDrawer from './CaseDetailDrawer';
 import JsonFetchGuide from './JsonFetchGuide';
 import Timeline from './Timeline';
 import VisitorMap from './VisitorMap';
@@ -13,8 +14,9 @@ export default function MyUSCISCase({
   agents,
   onSelectCommunityCase,
   onGoToFinder,
-  onGoToTutorial,
   theme = 'dark',
+  selectedCommunityId,
+  communityCaseDetail,
 }) {
   const [jsonInput, setJsonInput] = useState('');
   const [receiptInput, setReceiptInput] = useState('');
@@ -88,9 +90,6 @@ export default function MyUSCISCase({
         <div className="case-hero case-hero-compact">
           <h2>My USCIS case</h2>
           <div className="case-hero-actions">
-            <button type="button" className="toolbar-button" onClick={onGoToTutorial}>
-              Tutorial
-            </button>
             <button type="button" className="toolbar-button" onClick={onGoToFinder}>
               Search community
             </button>
@@ -200,8 +199,9 @@ export default function MyUSCISCase({
                     <button
                       key={record.id}
                       type="button"
-                      className="similar-item"
+                      className={`similar-item${record.id === selectedCommunityId ? ' selected' : ''}`}
                       onClick={() => onSelectCommunityCase(record)}
+                      aria-expanded={record.id === selectedCommunityId}
                     >
                       <span>{record.blockNumber || record.category} · {record.sheetName}</span>
                       <span>RD {formatDate(record.receiptDate)} → {formatDate(record.gcApprovalDate) || 'Pending'}</span>
@@ -242,22 +242,7 @@ export default function MyUSCISCase({
                 </div>
               ) : null}
 
-              <ActionPlan guidance={bridge.guidance} estimate={bridge.estimate} showResources={false} />
-            </section>
-          ) : null}
-
-          {bridge?.guidance.externalResources?.length ? (
-            <section className="panel">
-              <div className="detail-card">
-                <h3>Helpful resources</h3>
-                <div className="resource-links">
-                  {bridge.guidance.externalResources.map((resource) => (
-                    <a key={resource.url} href={resource.url} target="_blank" rel="noreferrer">
-                      {resource.label}
-                    </a>
-                  ))}
-                </div>
-              </div>
+              <ActionPlan guidance={bridge.guidance} estimate={bridge.estimate} />
             </section>
           ) : null}
         </div>
@@ -269,6 +254,12 @@ export default function MyUSCISCase({
       )}
 
       <VisitorMap theme={theme} />
+
+      <CaseDetailDrawer
+        open={Boolean(selectedCommunityId && communityCaseDetail)}
+        caseDetail={communityCaseDetail}
+        onClose={communityCaseDetail?.onClose}
+      />
     </div>
   );
 }

@@ -1,134 +1,74 @@
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
+import CaseDetailDrawer from './CaseDetailDrawer';
+import CaseResultsTable from './CaseResultsTable';
+import FilterBar from './FilterBar';
 import { FinderGuidancePanel } from './ActionPlan';
-import { formatDate } from '../utils/dates';
 import { buildFinderGuidance } from '../utils/advisoryService';
-import { getCasesForReceiptMonth } from '../utils/dataService';
+import { COMMUNITY_FILTER_DEFAULTS, toFilterCasesInput } from '../utils/filterHelpers';
+import { filterCases } from '../utils/dataService';
 
-export default function CaseFinder({ cases, onSelectCase }) {
-  const [priorityDate, setPriorityDate] = useState('');
-  const [receiptDate, setReceiptDate] = useState('');
-  const [category, setCategory] = useState('');
-  const [blockNumber, setBlockNumber] = useState('');
-
-  const categories = useMemo(
-    () => [...new Set(cases.map((record) => record.category).filter(Boolean))].sort(),
-    [cases]
+export default function CaseFinder({
+  cases,
+  filters,
+  filterOptions,
+  onFiltersChange,
+  selectedId,
+  onSelectCase,
+  caseDetail,
+}) {
+  const matches = useMemo(
+    () => filterCases(cases, toFilterCasesInput(filters)),
+    [cases, filters]
   );
 
   const finderGuidance = useMemo(
     () => buildFinderGuidance({
-      receiptDate: receiptDate ? new Date(receiptDate) : null,
-      cases,
+      receiptMonth: filters.receiptMonth,
+      cases: matches,
     }),
-    [receiptDate, cases]
+    [filters.receiptMonth, matches]
   );
-
-  const matches = useMemo(() => {
-    const pool = receiptDate
-      ? getCasesForReceiptMonth(cases, new Date(receiptDate))
-      : cases;
-
-    return pool
-      .filter((record) => {
-        if (blockNumber && !`${record.blockNumber} ${record.receiptNumbers.join(' ')}`.toUpperCase().includes(blockNumber.toUpperCase())) {
-          return false;
-        }
-        if (category && record.category !== category) return false;
-        if (priorityDate && record.priorityDate) {
-          const target = new Date(priorityDate);
-          const diff = Math.abs(record.priorityDate.getTime() - target.getTime()) / (1000 * 60 * 60 * 24);
-          if (diff > 120) return false;
-        } else if (priorityDate && !record.priorityDate) {
-          return false;
-        }
-        if (receiptDate && record.receiptDate) {
-          const target = new Date(receiptDate);
-          const diff = Math.abs(record.receiptDate.getTime() - target.getTime()) / (1000 * 60 * 60 * 24);
-          if (diff > 21) return false;
-        } else if (receiptDate && !record.receiptDate) {
-          return false;
-        }
-        return true;
-      })
-      .slice(0, 12);
-  }, [cases, blockNumber, category, priorityDate, receiptDate]);
 
   return (
     <section className="panel finder-panel">
-      <div className="panel-header">
+      <div className="panel-header panel-header-compact">
         <div>
-          <h2>Find my case</h2>
-          <p>
-            Start with your <strong>I-485 receipt date</strong> to match the correct monthly tab
-            (e.g. receipt on 4/1/2026 → Apr &apos;26 tab). Then narrow by block number or priority date.
-          </p>
+          <h2>Find in community</h2>
+          <p>Browse community cases by receipt month and block number. Click a row to open full details.</p>
         </div>
       </div>
 
-      <div className="finder-form finder-form-wide">
-        <label>
-          I-485 receipt date
-          <input
-            type="date"
-            value={receiptDate}
-            onChange={(event) => setReceiptDate(event.target.value)}
-          />
-        </label>
-        <label>
-          Block # / Receipt prefix
-          <input
-            type="text"
-            placeholder="e.g. IOE09358"
-            value={blockNumber}
-            onChange={(event) => setBlockNumber(event.target.value)}
-          />
-        </label>
-        <label>
-          Priority date (I-140/I-130 PD)
-          <input
-            type="date"
-            value={priorityDate}
-            onChange={(event) => setPriorityDate(event.target.value)}
-          />
-        </label>
-        <label>
-          Category
-          <select value={category} onChange={(event) => setCategory(event.target.value)}>
-            <option value="">Any category</option>
-            {categories.map((item) => (
-              <option key={item} value={item}>{item}</option>
-            ))}
-          </select>
-        </label>
-      </div>
+      <FilterBar
+        variant="community"
+        values={filters}
+        options={filterOptions}
+        onChange={onFiltersChange}
+        onClear={() => onFiltersChange(COMMUNITY_FILTER_DEFAULTS)}
+      />
 
       <FinderGuidancePanel guidance={finderGuidance} />
 
-      <div className="finder-results">
-        {matches.length ? (
-          matches.map((record) => (
-            <button
-              key={record.id}
-              type="button"
-              className="finder-card"
-              onClick={() => onSelectCase(record)}
-            >
-              <div>
-                <strong>{record.blockNumber || record.category}</strong>
-                <span>{record.sheetName} · {record.fieldOffice || 'Unknown FO'}</span>
-              </div>
-              <div>
-                <span>PD {formatDate(record.priorityDate)} · RD {formatDate(record.receiptDate)}</span>
-                <span>{formatDate(record.gcApprovalDate) ? `Approved ${formatDate(record.gcApprovalDate)}` : 'Pending'}</span>
-              </div>
-            </button>
-          ))
-        ) : (
-          <div className="empty-state compact">
-            <p>No close matches yet. Enter your I-485 receipt date first, then try block number alone.</p>
-          </div>
-        )}
-      </div>
+      <p className="results-count">
+        <strong>{matches.length.toLocaleString()}</strong> matching {matches.length === 1 ? 'case' : 'cases'}
+      </p>
+
+      <CaseResultsTable
+        cases={matches}
+        selectedId={selectedId}
+        onSelectCase={onSelectCase}
+        emptyTitle="No cases match"
+        emptyMessage="Select a receipt month tab or search by block # / IOE receipt."
+      />
+
+      {matches.length > 100 ? (
+        <p className="table-note">Showing first 100 of {matches.length.toLocaleString()} results.</p>
+      ) : null}
+
+      <CaseDetailDrawer
+        open={Boolean(selectedId && caseDetail)}
+        caseDetail={caseDetail}
+        onClose={caseDetail?.onClose}
+      />
     </section>
   );
 }

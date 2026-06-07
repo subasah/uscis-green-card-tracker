@@ -1,4 +1,4 @@
-import { EMMA_URL, EXTERNAL_RESOURCES, formatReceiptMonthLabel, recommendSheetForReceiptDate } from '../config';
+import { CASE_SHEETS, EMMA_URL, EXTERNAL_RESOURCES, formatReceiptMonthLabel, recommendSheetForReceiptDate } from '../config';
 import { formatDate } from './dates';
 
 const AGENT_QUESTIONS = {
@@ -154,8 +154,13 @@ export function buildCaseGuidance({ target, similarCases, agents, estimate, bloc
   };
 }
 
-export function buildFinderGuidance({ receiptDate, cases }) {
-  const sheet = receiptDate ? recommendSheetForReceiptDate(receiptDate) : null;
+export function buildFinderGuidance({ receiptDate, receiptMonth, cases }) {
+  const sheet = receiptMonth && receiptMonth !== 'all'
+    ? CASE_SHEETS.find((item) => item.receiptMonth === receiptMonth) ?? null
+    : receiptDate
+      ? recommendSheetForReceiptDate(receiptDate)
+      : null;
+
   const monthCases = sheet
     ? cases.filter((record) => record.receiptMonth === sheet.receiptMonth)
     : [];
@@ -174,7 +179,7 @@ export function buildFinderGuidance({ receiptDate, cases }) {
 
   const tips = [];
   if (sheet) {
-    tips.push(`Receipt date matches "${sheet.name}" — ${monthCases.length} cases in that tab.`);
+    tips.push(`"${sheet.name}" tab — ${monthCases.length} cases in current results.`);
   } else if (receiptDate) {
     tips.push('No exact receipt-month tab found — try searching by block number.');
   }

@@ -1,19 +1,23 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import AgentInsights from './components/AgentInsights';
-import CaseDetail from './components/CaseDetail';
 import CaseFinder from './components/CaseFinder';
-import CaseTable from './components/CaseTable';
 import Dashboard from './components/Dashboard';
-import { AppTopBar, DataRefreshBar, SearchBar } from './components/Layout';
+import LoadingState from './components/LoadingState';
+import { AppTopBar, DataRefreshBar } from './components/Layout';
 import ChatPresenceBar from './components/ChatPresenceBar';
 import CommunityChatPanel from './components/CommunityChatPanel';
 import MyUSCISCase from './components/MyUSCISCase';
 import RedditInsights from './components/RedditInsights';
-import Tutorial from './components/Tutorial';
 import { useTheme } from './hooks/useTheme';
+import { useScrollHeader } from './hooks/useScrollHeader';
 import { useCommunityChat } from './hooks/useCommunityChat';
 import { CASE_SHEETS } from './config';
 import { buildCaseGuidance } from './utils/advisoryService';
+import {
+  COMMUNITY_FILTER_DEFAULTS,
+  TRENDS_FILTER_DEFAULTS,
+  toFilterCasesInput,
+} from './utils/filterHelpers';
 import {
   buildInsights,
   estimateForCase,
@@ -26,18 +30,9 @@ import {
 } from './utils/dataService';
 import { fetchRedditFeed } from './utils/redditService';
 
-const DEFAULT_FILTERS = {
-  query: '',
-  category: 'all',
-  status: 'all',
-  fieldOffice: 'all',
-  country: 'all',
-  sheet: 'all',
-  receiptMonth: 'all',
-};
-
 export default function App() {
   const { preference, resolved, setPreference } = useTheme();
+  const { hidden: headerHidden, scrolled: headerScrolled } = useScrollHeader();
   const chat = useCommunityChat();
   const [cases, setCases] = useState([]);
   const [agents, setAgents] = useState([]);
@@ -46,7 +41,8 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [lastUpdated, setLastUpdated] = useState(null);
   const [activeTab, setActiveTab] = useState('my-uscis');
-  const [filters, setFilters] = useState(DEFAULT_FILTERS);
+  const [communityFilters, setCommunityFilters] = useState(COMMUNITY_FILTER_DEFAULTS);
+  const [trendsFilters, setTrendsFilters] = useState(TRENDS_FILTER_DEFAULTS);
   const [selectedCase, setSelectedCase] = useState(null);
   const [redditFeed, setRedditFeed] = useState(null);
   const [redditError, setRedditError] = useState('');
@@ -86,19 +82,17 @@ export default function App() {
     loadRedditFeed();
   }, [loadData, loadRedditFeed]);
 
-  const filteredCases = useMemo(
-    () => filterCases(cases, filters),
-    [cases, filters]
+  const filteredTrendCases = useMemo(
+    () => filterCases(cases, toFilterCasesInput(trendsFilters)),
+    [cases, trendsFilters]
   );
 
-  const insights = useMemo(() => buildInsights(filteredCases), [filteredCases]);
+  const insights = useMemo(() => buildInsights(filteredTrendCases), [filteredTrendCases]);
 
   const filterOptions = useMemo(
     () => ({
       categories: uniqueValues(cases, 'category'),
-      fieldOffices: uniqueValues(cases, 'fieldOffice'),
       countries: uniqueCountryValues(cases),
-      sheets: CASE_SHEETS.map((sheet) => sheet.name),
       receiptMonths: CASE_SHEETS.filter((sheet) => sheet.receiptMonth).map((sheet) => ({
         value: sheet.receiptMonth,
         label: sheet.name,
@@ -110,15 +104,12 @@ export default function App() {
   const chartKey = useMemo(
     () =>
       [
-        filters.country,
-        filters.category,
-        filters.status,
-        filters.fieldOffice,
-        filters.receiptMonth,
-        filters.sheet,
-        filters.query,
+        trendsFilters.country,
+        trendsFilters.category,
+        trendsFilters.status,
+        trendsFilters.receiptMonth,
       ].join('|'),
-    [filters]
+    [trendsFilters]
   );
 
   const similarCases = useMemo(
@@ -150,100 +141,128 @@ export default function App() {
     [selectedCase, similarCases, agents, estimate, blockProgress]
   );
 
-  const handleSelectCase = (record) => {
-    setSelectedCase(record);
-    setActiveTab('detail');
-  };
+  const handleSelectCase = useCallback((record) => {
+    setSelectedCase((current) => (current?.id === record.id ? null : record));
+  }, []);
 
-  const showFilters = !['my-uscis', 'finder', 'tutorial', 'agents', 'reddit'].includes(activeTab);
-  const showDataRefresh = ['dashboard', 'cases', 'detail', 'agents', 'finder'].includes(activeTab);
+  const handleTabChange = useCallback((tab) => {
+    setActiveTab(tab);
+    setSelectedCase(null);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
+  const handleCloseCaseDetail = useCallback(() => {
+    setSelectedCase(null);
+  }, []);
+
+  const selectedCaseDetail = selectedCase
+    ? {
+        record: selectedCase,
+        estimate,
+        guidance,
+        blockProgress,
+        similarCases,
+        onSelectCase: handleSelectCase,
+        onClose: handleCloseCaseDetail,
+      }
+    : null;
+
+  const showDataRefresh = ['dashboard', 'agents', 'finder'].includes(activeTab);
 
   return (
-    <div className="app-shell">
-      <AppTopBar
-        activeTab={activeTab}
-        onChange={setActiveTab}
-        themePreference={preference}
-        onThemeChange={setPreference}
-        chatSlot={
-          <ChatPresenceBar
-            configured={chat.configured}
-            onlineCount={chat.onlineCount}
-            onOpenChat={() => chat.setChatOpen(true)}
+    <div className="app-frame">
+      <div
+        className={[
+          'app-header-shell',
+          headerHidden ? 'is-hidden' : '',
+          headerScrolled ? 'is-scrolled' : '',
+        ].filter(Boolean).join(' ')}
+      >
+        <div className="app-header-inner">
+          <AppTopBar
+            activeTab={activeTab}
+            onChange={handleTabChange}
+            themePreference={preference}
+            onThemeChange={setPreference}
+            chatSlot={
+              <ChatPresenceBar
+                configured={chat.configured}
+                onlineCount={chat.onlineCount}
+                onOpenChat={() => chat.setChatOpen(true)}
+              />
+            }
           />
-        }
-      />
+        </div>
+      </div>
 
-      {showDataRefresh ? (
-        <DataRefreshBar
-          loading={loading}
-          lastUpdated={lastUpdated}
-          caseCount={cases.length}
-          onRefresh={loadData}
-          errors={errors}
-        />
-      ) : null}
+      <div className="app-shell">
+      <main id="main-content" className="app-main">
+        {showDataRefresh ? (
+          <DataRefreshBar
+            loading={loading}
+            lastUpdated={lastUpdated}
+            caseCount={cases.length}
+            onRefresh={loadData}
+            errors={errors}
+          />
+        ) : null}
 
-      {showFilters ? (
-        <SearchBar filters={filters} options={filterOptions} onChange={setFilters} />
-      ) : null}
+        {loading && !cases.length ? <LoadingState /> : null}
 
-      {loading && !cases.length ? (
-        <div className="loading-state">Loading tracker data…</div>
-      ) : null}
+        {activeTab === 'my-uscis' ? (
+          <MyUSCISCase
+            communityCases={cases}
+            agents={agents}
+            onSelectCommunityCase={handleSelectCase}
+            onGoToFinder={() => handleTabChange('finder')}
+            theme={resolved}
+            selectedCommunityId={selectedCase?.id}
+            communityCaseDetail={selectedCaseDetail}
+          />
+        ) : null}
 
-      {activeTab === 'my-uscis' ? (
-        <MyUSCISCase
-          communityCases={cases}
-          agents={agents}
-          onSelectCommunityCase={handleSelectCase}
-          onGoToFinder={() => setActiveTab('finder')}
-          onGoToTutorial={() => setActiveTab('tutorial')}
-          theme={resolved}
-        />
-      ) : null}
+        {activeTab === 'finder' ? (
+          <CaseFinder
+            cases={cases}
+            filters={communityFilters}
+            filterOptions={filterOptions}
+            onFiltersChange={setCommunityFilters}
+            selectedId={selectedCase?.id}
+            onSelectCase={handleSelectCase}
+            caseDetail={selectedCaseDetail}
+          />
+        ) : null}
 
-      {activeTab === 'finder' ? (
-        <CaseFinder cases={cases} onSelectCase={handleSelectCase} />
-      ) : null}
+        {activeTab === 'dashboard' ? (
+          <Dashboard
+            insights={insights}
+            cases={filteredTrendCases}
+            filters={trendsFilters}
+            filterOptions={filterOptions}
+            onFiltersChange={setTrendsFilters}
+            chartKey={chartKey}
+            theme={resolved}
+          />
+        ) : null}
 
-      {activeTab === 'dashboard' ? (
-        <Dashboard insights={insights} cases={filteredCases} filters={filters} chartKey={chartKey} theme={resolved} />
-      ) : null}
+        {activeTab === 'agents' ? (
+          <AgentInsights agents={agents} rules={rules} />
+        ) : null}
 
-      {activeTab === 'cases' ? (
-        <CaseTable
-          cases={filteredCases}
-          selectedId={selectedCase?.id}
-          onSelectCase={handleSelectCase}
-        />
-      ) : null}
+        {activeTab === 'reddit' ? (
+          <RedditInsights
+            feed={redditFeed}
+            loading={redditLoading}
+            error={redditError}
+            onRefresh={loadRedditFeed}
+          />
+        ) : null}
+      </main>
 
-      {activeTab === 'detail' ? (
-        <CaseDetail
-          record={selectedCase}
-          estimate={estimate}
-          guidance={guidance}
-          blockProgress={blockProgress}
-          similarCases={similarCases}
-          onSelectCase={handleSelectCase}
-        />
-      ) : null}
-
-      {activeTab === 'agents' ? (
-        <AgentInsights agents={agents} rules={rules} />
-      ) : null}
-
-      {activeTab === 'reddit' ? (
-        <RedditInsights
-          feed={redditFeed}
-          loading={redditLoading}
-          error={redditError}
-          onRefresh={loadRedditFeed}
-        />
-      ) : null}
-
-      {activeTab === 'tutorial' ? <Tutorial /> : null}
+      <footer className="app-footer">
+        <p>Informational only — not legal advice or official USCIS guidance. USCIS JSON is processed locally in your browser.</p>
+      </footer>
+      </div>
 
       <CommunityChatPanel
         open={chat.chatOpen}
@@ -260,10 +279,6 @@ export default function App() {
         canChat={chat.canChat}
         sendMessage={chat.sendMessage}
       />
-
-      <footer className="app-footer">
-        <p>Informational only — not legal advice or official USCIS guidance. USCIS JSON is processed locally in your browser.</p>
-      </footer>
     </div>
   );
 }

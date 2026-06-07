@@ -1,42 +1,66 @@
 import { formatDate } from '../utils/dates';
 
+const STAGE_LABELS = {
+  early: 'Early stage',
+  post_receipt: 'After I-485 receipt',
+  post_biometric: 'After biometrics',
+  post_transfer: 'After field office transfer',
+  approved: 'Approved',
+};
+
 function PriorityBadge({ priority }) {
   const className = priority === 'high' ? 'priority-high' : priority === 'medium' ? 'priority-medium' : 'priority-low';
   return <span className={`priority-badge ${className}`}>{priority}</span>;
 }
 
-export default function ActionPlan({ guidance, estimate, showResources = true }) {
-  if (!guidance) return null;
+export default function ActionPlan({ guidance, estimate }) {
+  if (!guidance && !estimate) return null;
+
+  const stage = estimate?.latestStage || guidance?.stage || 'early';
+  const stageLabel = STAGE_LABELS[stage] || 'In progress';
+  const nextStep =
+    estimate?.nextStep ||
+    'Pick a community case with a receipt date to unlock stage-based guidance and approval estimates.';
+
+  const metaItems = [
+    estimate?.projectedApprovalDate
+      ? `Estimated approval around ${formatDate(estimate.projectedApprovalDate)}`
+      : null,
+    estimate?.projectedRange
+      ? `Typical range: ${formatDate(estimate.projectedRange.low)} – ${formatDate(estimate.projectedRange.high)} (${estimate.projectedRange.p25}–${estimate.projectedRange.p75} days from receipt)`
+      : null,
+    estimate?.medianTotalDays != null
+      ? `Median receipt → approval: ${estimate.medianTotalDays} days (${estimate.sampleSize} similar cases)`
+      : estimate?.sampleSize
+        ? `${estimate.sampleSize} similar community cases compared`
+        : null,
+    guidance?.receiptSheet ? `Tracker tab: ${guidance.receiptSheet.name}` : null,
+  ].filter(Boolean);
+
+  const actions = guidance?.actions ?? [];
 
   return (
     <div className="guidance-stack">
       <div className="estimate-card highlight">
-        <h3>Recommended next steps</h3>
-        <p>{estimate?.nextStep}</p>
-        <div className="estimate-meta">
-          {estimate?.projectedApprovalDate ? (
-            <span>Estimated approval around {formatDate(estimate.projectedApprovalDate)}</span>
-          ) : null}
-          {estimate?.projectedRange ? (
-            <span>
-              Typical range for similar cases: {formatDate(estimate.projectedRange.low)} – {formatDate(estimate.projectedRange.high)}
-              {' '}({estimate.projectedRange.p25}–{estimate.projectedRange.p75} days from receipt)
-            </span>
-          ) : null}
-          {estimate?.medianTotalDays != null ? (
-            <span>Median receipt → approval: {estimate.medianTotalDays} days ({estimate.sampleSize} similar cases)</span>
-          ) : null}
-          {guidance.receiptSheet ? (
-            <span>Use tracker tab: <strong>{guidance.receiptSheet.name}</strong></span>
-          ) : null}
+        <div className="action-plan-head">
+          <h3>Recommended next steps</h3>
+          <span className="tag action-plan-stage">{stageLabel}</span>
         </div>
+        <p className="action-plan-summary">{nextStep}</p>
+        {metaItems.length ? (
+          <div className="estimate-meta">
+            {metaItems.map((item) => (
+              <span key={item}>{item}</span>
+            ))}
+          </div>
+        ) : null}
       </div>
 
-      <div className="detail-grid">
-        <div className="detail-card">
-          <h3>USCIS actions you can take</h3>
+      {actions.length ? (
+        <div className="detail-card action-plan-steps">
+          <h3>Suggested actions</h3>
           <div className="action-list">
-            {guidance.actions.map((action) => (
+            {actions.map((action) => (
               <div key={action.title} className="action-item">
                 <div className="action-head">
                   <strong>{action.title}</strong>
@@ -44,49 +68,6 @@ export default function ActionPlan({ guidance, estimate, showResources = true })
                 </div>
                 <p>{action.detail}</p>
               </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="detail-card">
-          <h3>Ask Emma (live agent)</h3>
-          <p className="muted-copy">
-            {guidance.agentStats.helpfulRate}% of logged chats were helpful ({guidance.agentStats.helpful}/{guidance.agentStats.total}).
-            {' '}<a href={guidance.emmaUrl} target="_blank" rel="noreferrer">Open Emma chat</a>
-          </p>
-          <ul className="question-list">
-            {guidance.recommendedQuestions.map((question) => (
-              <li key={question}>{question}</li>
-            ))}
-          </ul>
-          <div className="tip-list">
-            {guidance.emmaTips.map((tip) => (
-              <p key={tip} className="tip-item">{tip}</p>
-            ))}
-          </div>
-          {guidance.helpfulAgents.length ? (
-            <>
-              <h4 className="subheading">Agents rated helpful recently</h4>
-              <div className="agent-list">
-                {guidance.helpfulAgents.slice(0, 5).map((agent) => (
-                  <div key={agent.id} className="agent-card">
-                    <strong>{agent.name}</strong>
-                    <span>{agent.agentId || 'No ID logged'}</span>
-                    <p>{agent.comment.slice(0, 140)}{agent.comment.length > 140 ? '…' : ''}</p>
-                  </div>
-                ))}
-              </div>
-            </>
-          ) : null}
-        </div>
-      </div>
-
-      {showResources ? (
-        <div className="detail-card">
-          <h3>Helpful resources</h3>
-          <div className="resource-links">
-            {guidance.externalResources.map((resource) => (
-              <a key={resource.url} href={resource.url} target="_blank" rel="noreferrer">{resource.label}</a>
             ))}
           </div>
         </div>

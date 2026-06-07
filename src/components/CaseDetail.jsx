@@ -33,17 +33,11 @@ export default function CaseDetail({
   blockProgress,
   similarCases,
   onSelectCase,
+  onClose,
+  embedded = false,
+  drawer = false,
 }) {
-  if (!record) {
-    return (
-      <section className="panel detail-panel empty">
-        <h2>Select a case</h2>
-        <p>
-          Search by block number (e.g. IOE09358), receipt date, priority date, or category to see timeline and approval estimates.
-        </p>
-      </section>
-    );
-  }
+  if (!record) return null;
 
   const silentEvents = parseSilentUpdates(record.silentUpdates);
 
@@ -54,18 +48,56 @@ export default function CaseDetail({
     state: stepState(record, step),
   }));
 
-  return (
-    <section className="panel detail-panel">
-      <div className="panel-header">
-        <div>
-          <h2>{record.blockNumber || 'Case details'}</h2>
+  const content = (
+    <>
+      {embedded && !drawer ? (
+        <div className="case-detail-embedded-header">
+          <div>
+            <span className="case-detail-embedded-label">Case details</span>
+            <strong>{record.blockNumber || record.category || 'Selected case'}</strong>
+            <span className="case-detail-embedded-meta">
+              {record.category || 'Unknown category'} · {record.fieldOffice || 'Field office unknown'}
+              {record.receiptMonth ? ` · ${formatReceiptMonthLabel(record.receiptMonth)} tab` : ''}
+            </span>
+          </div>
+          <div className="panel-header-actions">
+            <span className={`badge badge-${record.status}`}>{statusLabel(record.status)}</span>
+            {onClose ? (
+              <button type="button" className="toolbar-button detail-close" onClick={onClose}>
+                Hide
+              </button>
+            ) : null}
+          </div>
+        </div>
+      ) : !embedded ? (
+        <div className="panel-header">
+          <div>
+            <h2>{record.blockNumber || 'Case details'}</h2>
+            <p>
+              {record.category || 'Unknown category'} · {record.fieldOffice || 'Field office unknown'}
+              {record.receiptMonth ? ` · ${formatReceiptMonthLabel(record.receiptMonth)} filers tab` : ''}
+            </p>
+          </div>
+          <div className="panel-header-actions">
+            <span className={`badge badge-${record.status}`}>{statusLabel(record.status)}</span>
+            {onClose ? (
+              <button type="button" className="toolbar-button detail-close" onClick={onClose}>
+                Close
+              </button>
+            ) : null}
+          </div>
+        </div>
+      ) : null}
+
+      {drawer ? (
+        <div className="case-detail-drawer-intro">
+          <span className={`badge badge-${record.status}`}>{statusLabel(record.status)}</span>
           <p>
             {record.category || 'Unknown category'} · {record.fieldOffice || 'Field office unknown'}
-            {record.receiptMonth ? ` · ${formatReceiptMonthLabel(record.receiptMonth)} filers tab` : ''}
+            {record.receiptMonth ? ` · ${formatReceiptMonthLabel(record.receiptMonth)} tab` : ''}
           </p>
         </div>
-        <span className={`badge badge-${record.status}`}>{statusLabel(record.status)}</span>
-      </div>
+      ) : null}
 
       {blockProgress ? (
         <div className="guidance-banner">
@@ -153,6 +185,12 @@ export default function CaseDetail({
           </div>
         </div>
       ) : null}
-    </section>
+    </>
   );
+
+  if (embedded) {
+    return <div className="case-detail-embedded">{content}</div>;
+  }
+
+  return <section className="panel detail-panel">{content}</section>;
 }
