@@ -40,7 +40,7 @@
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1tzi0o7/approved_eb2_row_75_countries/",
       "author": "/u/usman17888",
       "publishedAt": "2026-06-07T17:18:16+00:00",
-      "excerpt": "Hi Everyone, Approved Receipt date: 10/24/25 From ROW + 75 counties FTA1 in Feb (2/11) EAD in April (1/4) FTA2 in 6/3/2026. Day after we got multiple silent updates Principle and one derivatives Approved on 6/5 and other two derivatives 6/7 approved after 24h of last. Best of luck to all of you.",
+      "excerpt": "Hi Everyone, Approved Receipt date: 10/24/25 From ROW + 75 counties FTA1 in Feb (2/11) EAD in April (1/4) FTA1 in 6/3/2026. Day after we got multiple silent updates Principle and one derivatives Approved on 6/5 and other two derivatives 6/7 approved after 24h of last. Best of luck to all of you.",
       "topics": [
         "approval",
         "timeline"
@@ -138,6 +138,27 @@
       "excerpt": "PD: June 2024 PP: 29, December 2025 RFE: 19, February 2026 USCIS RFE acknowledged receipt: 1, April 2026 No updates till May 16, 2026 status changed to case being processed. May 27,2026 Sent inquiry to PP email, they replied same day that case was with adjudicating officer - no new update. June 7, 2026 case still being…",
       "topics": [
         "i140",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1tzjiwd",
+      "title": "Should I do consular or AOS?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1tzjiwd/should_i_do_consular_or_aos/",
+      "author": "/u/littlemissunshin3",
+      "publishedAt": "2026-06-07T18:14:02+00:00",
+      "excerpt": "I have been thinking about it this week and it just seems like there’s no good solution. My i-140 is approved but I’m from a severely back logged country. My spouse is currently living and working in his home country and if we use his chargeability it would be current. However, this might change in the next few months …",
+      "topics": [
+        "approval",
+        "i485",
+        "i140",
+        "timeline",
         "question"
       ],
       "signals": {
@@ -441,29 +462,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1tyfb04",
-      "title": "I485- anyone else not getting silent updates?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1tyfb04/i485_anyone_else_not_getting_silent_updates/",
-      "author": "/u/Comfortable-Dance-23",
-      "publishedAt": "2026-06-06T11:56:30+00:00",
-      "excerpt": "Just need to vent a little bit, I can’t be the only one feeling left out. RD 3/30 Bio 4/20 Silent Update 1 - 4/29 (mass silent update, biometrics resubmission) Radio silence after that PD Feb 2025 ROW, not part of 75 list. Case still at NBC I know it can take many months and it’s still “early” after biometrics, but I k…",
-      "topics": [
-        "i485",
-        "i140",
-        "timeline",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": "3/30",
-        "priorityDate": null,
-        "mentionsCountry75": true
-      }
     }
   ],
-  "syncedAt": "2026-06-07T17:58:18.279Z",
+  "syncedAt": "2026-06-07T19:21:42.089Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
