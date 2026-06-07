@@ -13,7 +13,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const PROJECT_REF = 'cpfxybnbuizxkxtvunmd';
+const PROJECT_REF = 'cpfxybnbuixzkxtvunmd';
 const SUPABASE_URL = `https://${PROJECT_REF}.supabase.co`;
 const GITHUB_REPO = 'uscis-green-card-tracker/uscis-green-card-tracker.github.io';
 const TOKEN = process.env.SUPABASE_ACCESS_TOKEN;
