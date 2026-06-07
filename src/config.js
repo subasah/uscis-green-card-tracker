@@ -42,6 +42,28 @@ export const REDDIT_TOPICS = [
   { id: 'question', label: 'Question' },
 ];
 
+export const CHAT_CONFIG = {
+  url: import.meta.env.VITE_SUPABASE_URL || '',
+  anonKey: import.meta.env.VITE_SUPABASE_ANON_KEY || '',
+  retentionDays: 15,
+  maxMessageLength: 2000,
+  maxDisplayNameLength: 40,
+};
+
+export const CHAT_CASE_TAGS = [
+  { id: '', label: 'General' },
+  { id: 'biometrics', label: 'Biometrics pending' },
+  { id: 'interview', label: 'Interview stage' },
+  { id: 'rfe', label: 'RFE / evidence' },
+  { id: 'approved', label: 'Approved' },
+  { id: 'processing', label: 'Still processing' },
+  { id: 'block', label: 'Block / receipt month' },
+];
+
+export function chatCaseTagLabel(id) {
+  return CHAT_CASE_TAGS.find((tag) => tag.id === id)?.label || null;
+}
+
 export function receiptMonthKey(date) {
   if (!date) return null;
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;

@@ -4,10 +4,14 @@ import CaseDetail from './components/CaseDetail';
 import CaseFinder from './components/CaseFinder';
 import CaseTable from './components/CaseTable';
 import Dashboard from './components/Dashboard';
-import { Header, NavTabs, SearchBar } from './components/Layout';
+import { AppTopBar, DataRefreshBar, SearchBar } from './components/Layout';
+import ChatPresenceBar from './components/ChatPresenceBar';
+import CommunityChatPanel from './components/CommunityChatPanel';
 import MyUSCISCase from './components/MyUSCISCase';
 import RedditInsights from './components/RedditInsights';
 import Tutorial from './components/Tutorial';
+import { useTheme } from './hooks/useTheme';
+import { useCommunityChat } from './hooks/useCommunityChat';
 import { CASE_SHEETS } from './config';
 import { buildCaseGuidance } from './utils/advisoryService';
 import {
@@ -33,6 +37,8 @@ const DEFAULT_FILTERS = {
 };
 
 export default function App() {
+  const { preference, resolved, setPreference } = useTheme();
+  const chat = useCommunityChat();
   const [cases, setCases] = useState([]);
   const [agents, setAgents] = useState([]);
   const [rules, setRules] = useState({ rulesText: '', links: [] });
@@ -150,18 +156,33 @@ export default function App() {
   };
 
   const showFilters = !['my-uscis', 'finder', 'tutorial', 'agents', 'reddit'].includes(activeTab);
+  const showDataRefresh = ['dashboard', 'cases', 'detail', 'agents', 'finder'].includes(activeTab);
 
   return (
     <div className="app-shell">
-      <Header
-        lastUpdated={lastUpdated}
-        loading={loading}
-        onRefresh={loadData}
-        errors={errors}
-        stats={{ cases: cases.length, agents: agents.length }}
+      <AppTopBar
+        activeTab={activeTab}
+        onChange={setActiveTab}
+        themePreference={preference}
+        onThemeChange={setPreference}
+        chatSlot={
+          <ChatPresenceBar
+            configured={chat.configured}
+            onlineCount={chat.onlineCount}
+            onOpenChat={() => chat.setChatOpen(true)}
+          />
+        }
       />
 
-      <NavTabs activeTab={activeTab} onChange={setActiveTab} />
+      {showDataRefresh ? (
+        <DataRefreshBar
+          loading={loading}
+          lastUpdated={lastUpdated}
+          caseCount={cases.length}
+          onRefresh={loadData}
+          errors={errors}
+        />
+      ) : null}
 
       {showFilters ? (
         <SearchBar filters={filters} options={filterOptions} onChange={setFilters} />
@@ -178,6 +199,7 @@ export default function App() {
           onSelectCommunityCase={handleSelectCase}
           onGoToFinder={() => setActiveTab('finder')}
           onGoToTutorial={() => setActiveTab('tutorial')}
+          theme={resolved}
         />
       ) : null}
 
@@ -186,7 +208,7 @@ export default function App() {
       ) : null}
 
       {activeTab === 'dashboard' ? (
-        <Dashboard insights={insights} cases={filteredCases} filters={filters} chartKey={chartKey} />
+        <Dashboard insights={insights} cases={filteredCases} filters={filters} chartKey={chartKey} theme={resolved} />
       ) : null}
 
       {activeTab === 'cases' ? (
@@ -222,6 +244,22 @@ export default function App() {
       ) : null}
 
       {activeTab === 'tutorial' ? <Tutorial /> : null}
+
+      <CommunityChatPanel
+        open={chat.chatOpen}
+        onClose={() => chat.setChatOpen(false)}
+        configured={chat.configured}
+        ready={chat.ready}
+        loading={chat.loading}
+        sending={chat.sending}
+        error={chat.error}
+        profile={chat.profile}
+        messages={chat.messages}
+        onlineCount={chat.onlineCount}
+        authorId={chat.authorId}
+        canChat={chat.canChat}
+        sendMessage={chat.sendMessage}
+      />
 
       <footer className="app-footer">
         <p>Informational only — not legal advice or official USCIS guidance. USCIS JSON is processed locally in your browser.</p>

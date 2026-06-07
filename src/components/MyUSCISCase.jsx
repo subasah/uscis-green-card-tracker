@@ -1,10 +1,12 @@
 import { useMemo, useState } from 'react';
 import ActionPlan from './ActionPlan';
+import JsonFetchGuide from './JsonFetchGuide';
 import Timeline from './Timeline';
+import VisitorMap from './VisitorMap';
 import { CAT_STYLE } from '../data/eventCodes';
 import { bridgePersonalAndCommunity } from '../utils/caseBridge';
 import { formatDate } from '../utils/dates';
-import { getUSCISApiUrl, parseUSCISJSON } from '../utils/uscisParser';
+import { parseUSCISJSON } from '../utils/uscisParser';
 
 export default function MyUSCISCase({
   communityCases,
@@ -12,6 +14,7 @@ export default function MyUSCISCase({
   onSelectCommunityCase,
   onGoToFinder,
   onGoToTutorial,
+  theme = 'dark',
 }) {
   const [jsonInput, setJsonInput] = useState('');
   const [receiptInput, setReceiptInput] = useState('');
@@ -56,8 +59,6 @@ export default function MyUSCISCase({
     reader.readAsText(file);
   };
 
-  const apiUrl = receiptInput ? getUSCISApiUrl(receiptInput) : '';
-
   const stageTimeline = personalCase
     ? personalCase.stages.map((stage) => ({
         id: stage.name,
@@ -83,84 +84,73 @@ export default function MyUSCISCase({
 
   return (
     <div className="my-case-stack">
-      <section className="panel">
-        <div className="panel-header">
-          <div>
-            <h2>My USCIS case</h2>
-            <p>Paste your USCIS JSON below to see your timeline and compare with community block data.</p>
+      <section className="panel case-workspace-panel">
+        <div className="case-hero case-hero-compact">
+          <h2>My USCIS case</h2>
+          <div className="case-hero-actions">
+            <button type="button" className="toolbar-button" onClick={onGoToTutorial}>
+              Tutorial
+            </button>
+            <button type="button" className="toolbar-button" onClick={onGoToFinder}>
+              Search community
+            </button>
           </div>
-          <button type="button" className="text-link-button" onClick={onGoToTutorial}>
-            Need help? View tutorial
-          </button>
-        </div>
-
-        <div className="quick-actions">
-          <button type="button" className="quick-action" onClick={() => document.getElementById('json-input')?.focus()}>
-            Paste USCIS JSON
-          </button>
-          <button type="button" className="quick-action" onClick={onGoToFinder}>
-            Search community tracker
-          </button>
         </div>
 
         <form
-          className="uscis-input-grid"
+          className="case-workspace"
           onSubmit={(event) => {
             event.preventDefault();
             runAnalyze();
           }}
         >
-          <label className="json-field">
-            <span>USCIS API JSON</span>
+          <div className="case-editor-shell">
+            <div className="case-editor-toolbar">
+              <span className="case-editor-label">USCIS JSON workspace</span>
+              <span className="case-editor-meta">{jsonInput.length ? `${jsonInput.length.toLocaleString()} chars` : 'Waiting for paste'}</span>
+            </div>
             <textarea
               id="json-input"
-              rows={8}
-              placeholder='Paste JSON from my.uscis.gov/account/case-service/api/cases/IOE09...'
+              className="case-editor-input"
+              rows={11}
+              spellCheck={false}
+              placeholder={`{\n  "receiptNumber": "IOE09...",\n  "formType": "I-485",\n  "events": [ ... ]\n}`}
               value={jsonInput}
               onChange={(event) => setJsonInput(event.target.value)}
             />
-          </label>
+          </div>
 
-          <div className="uscis-side-panel">
-            <label>
-              Receipt number
-              <input
-                type="text"
-                placeholder="IOE0912345678"
-                value={receiptInput}
-                onChange={(event) => setReceiptInput(event.target.value.toUpperCase())}
-              />
-            </label>
-            {apiUrl ? (
-              <a className="api-link-button" href={apiUrl} target="_blank" rel="noreferrer">
-                Open USCIS API (sign in first)
-              </a>
-            ) : null}
-
-            <label className="file-upload">
-              <span>Upload .json file</span>
+          <div className="case-workspace-actions">
+            <label className="case-file-button">
               <input type="file" accept=".json,.txt,application/json" onChange={handleFile} />
+              Upload .json
             </label>
-
-            <button type="submit" className="refresh-button">
+            <button type="submit" className="case-analyze-button">
               Analyze case
             </button>
-            {error ? <p className="error-text">{error}</p> : null}
           </div>
+
+          {error ? <p className="case-error-banner">{error}</p> : null}
         </form>
+
+        <JsonFetchGuide receiptInput={receiptInput} onReceiptChange={setReceiptInput} />
       </section>
 
       {personalCase ? (
-        <div id="case-results">
-          <section className="panel">
-            <div className="panel-header">
+        <div id="case-results" className="case-results-stack">
+          <section className="panel case-results-panel">
+            <div className="case-results-hero">
               <div>
-                <h2>Your case · {personalCase.receiptNumber}</h2>
-                <p>{personalCase.formType} · {personalCase.applicantName || 'Applicant'} · Block {personalCase.blockNumber || '—'}</p>
+                <p className="case-hero-eyebrow">Analysis ready</p>
+                <h2>{personalCase.receiptNumber}</h2>
+                <p>
+                  {personalCase.formType} · {personalCase.applicantName || 'Applicant'} · Block{' '}
+                  {personalCase.blockNumber || '—'}
+                </p>
               </div>
               <div className="stat-pills">
                 <span className="tag">{personalCase.daysSinceFiling ?? '—'} days since filing</span>
-                <span className="tag">{personalCase.events.length} USCIS events</span>
+                <span className="tag">{personalCase.events.length} events</span>
                 {personalCase.fta0Count ? <span className="tag">{personalCase.fta0Count}× FTA0</span> : null}
                 {personalCase.interviewWaived ? <span className="tag">Interview waived</span> : null}
                 {personalCase.isApproved ? <span className="tag tag-approved">Approved</span> : null}
@@ -252,11 +242,7 @@ export default function MyUSCISCase({
                 </div>
               ) : null}
 
-              <ActionPlan
-                guidance={bridge.guidance}
-                estimate={bridge.estimate}
-                showResources={false}
-              />
+              <ActionPlan guidance={bridge.guidance} estimate={bridge.estimate} showResources={false} />
             </section>
           ) : null}
 
@@ -266,14 +252,23 @@ export default function MyUSCISCase({
                 <h3>Helpful resources</h3>
                 <div className="resource-links">
                   {bridge.guidance.externalResources.map((resource) => (
-                    <a key={resource.url} href={resource.url} target="_blank" rel="noreferrer">{resource.label}</a>
+                    <a key={resource.url} href={resource.url} target="_blank" rel="noreferrer">
+                      {resource.label}
+                    </a>
                   ))}
                 </div>
               </div>
             </section>
           ) : null}
         </div>
-      ) : null}
+      ) : (
+        <section className="panel case-empty-state">
+          <h3>Your timeline appears here</h3>
+          <p>Paste USCIS JSON above to unlock progress stages, event history, and community comparisons.</p>
+        </section>
+      )}
+
+      <VisitorMap theme={theme} />
     </div>
   );
 }

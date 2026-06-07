@@ -47,8 +47,8 @@ export default function RedditInsights({ feed, loading, error, onRefresh }) {
             </p>
           ) : null}
         </div>
-        <button type="button" className="refresh-button" onClick={onRefresh} disabled={loading}>
-          {loading ? 'Refreshing…' : 'Refresh feed'}
+        <button type="button" className="toolbar-button" onClick={onRefresh} disabled={loading}>
+          {loading ? 'Refreshing…' : 'Refresh Reddit feed'}
         </button>
       </div>
 

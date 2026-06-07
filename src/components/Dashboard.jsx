@@ -11,6 +11,7 @@ import {
 } from 'recharts';
 import { formatReceiptMonthLabel } from '../config';
 import { average, formatDate, median, monthLabel } from '../utils/dates';
+import { getChartTheme } from '../utils/theme';
 
 function StatCard({ label, value, hint }) {
   return (
@@ -53,7 +54,8 @@ function describeActiveFilters(filters) {
   return parts;
 }
 
-export default function Dashboard({ insights, cases, filters, chartKey }) {
+export default function Dashboard({ insights, cases, filters, chartKey, theme = 'dark' }) {
+  const chartTheme = getChartTheme(theme);
   const categoryData = insights.byCategory.slice(0, 8).map((item) => ({
     name: item.name,
     medianDays: item.medianDays ?? 0,
@@ -130,13 +132,18 @@ export default function Dashboard({ insights, cases, filters, chartKey }) {
           {monthlyData.length ? (
             <ResponsiveContainer key={`monthly-${chartKey}`} width="100%" height={260}>
               <LineChart data={monthlyData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(148,163,184,0.25)" />
-                <XAxis dataKey="label" tick={{ fill: '#cbd5e1', fontSize: 12 }} />
-                <YAxis allowDecimals={false} tick={{ fill: '#cbd5e1', fontSize: 12 }} />
+                <CartesianGrid strokeDasharray="3 3" stroke={chartTheme.grid} />
+                <XAxis dataKey="label" tick={{ fill: chartTheme.tick, fontSize: 12 }} />
+                <YAxis allowDecimals={false} tick={{ fill: chartTheme.tick, fontSize: 12 }} />
                 <Tooltip
-                  contentStyle={{ background: '#0f172a', border: '1px solid #334155', borderRadius: 12 }}
+                  contentStyle={{
+                    background: chartTheme.tooltip.background,
+                    border: `1px solid ${chartTheme.tooltip.border}`,
+                    borderRadius: 12,
+                    color: chartTheme.tooltip.color,
+                  }}
                 />
-                <Line type="monotone" dataKey="count" stroke="#38bdf8" strokeWidth={3} dot={{ r: 4 }} />
+                <Line type="monotone" dataKey="count" stroke={chartTheme.line} strokeWidth={3} dot={{ r: 4 }} />
               </LineChart>
             </ResponsiveContainer>
           ) : (
@@ -152,13 +159,18 @@ export default function Dashboard({ insights, cases, filters, chartKey }) {
           {categoryData.length ? (
             <ResponsiveContainer key={`category-${chartKey}`} width="100%" height={260}>
               <BarChart data={categoryData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(148,163,184,0.25)" />
-                <XAxis dataKey="name" tick={{ fill: '#cbd5e1', fontSize: 11 }} />
-                <YAxis tick={{ fill: '#cbd5e1', fontSize: 12 }} />
+                <CartesianGrid strokeDasharray="3 3" stroke={chartTheme.grid} />
+                <XAxis dataKey="name" tick={{ fill: chartTheme.tick, fontSize: 11 }} />
+                <YAxis tick={{ fill: chartTheme.tick, fontSize: 12 }} />
                 <Tooltip
-                  contentStyle={{ background: '#0f172a', border: '1px solid #334155', borderRadius: 12 }}
+                  contentStyle={{
+                    background: chartTheme.tooltip.background,
+                    border: `1px solid ${chartTheme.tooltip.border}`,
+                    borderRadius: 12,
+                    color: chartTheme.tooltip.color,
+                  }}
                 />
-                <Bar dataKey="medianDays" fill="#34d399" radius={[8, 8, 0, 0]} />
+                <Bar dataKey="medianDays" fill={chartTheme.barGreen} radius={[8, 8, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           ) : (
@@ -178,19 +190,24 @@ export default function Dashboard({ insights, cases, filters, chartKey }) {
           {fieldOfficeData.length ? (
             <ResponsiveContainer key={`office-${chartKey}`} width="100%" height={280}>
               <BarChart data={fieldOfficeData} layout="vertical" margin={{ left: 20 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(148,163,184,0.25)" />
-                <XAxis type="number" tick={{ fill: '#cbd5e1', fontSize: 12 }} />
+                <CartesianGrid strokeDasharray="3 3" stroke={chartTheme.grid} />
+                <XAxis type="number" tick={{ fill: chartTheme.tick, fontSize: 12 }} />
                 <YAxis
                   type="category"
                   dataKey="name"
                   width={120}
-                  tick={{ fill: '#cbd5e1', fontSize: 11 }}
+                  tick={{ fill: chartTheme.tick, fontSize: 11 }}
                 />
                 <Tooltip
                   formatter={(value, _name, props) => [`${value} days`, props.payload.fullName]}
-                  contentStyle={{ background: '#0f172a', border: '1px solid #334055', borderRadius: 12 }}
+                  contentStyle={{
+                    background: chartTheme.tooltip.background,
+                    border: `1px solid ${chartTheme.tooltip.border}`,
+                    borderRadius: 12,
+                    color: chartTheme.tooltip.color,
+                  }}
                 />
-                <Bar dataKey="medianDays" fill="#818cf8" radius={[0, 8, 8, 0]} />
+                <Bar dataKey="medianDays" fill={chartTheme.barPurple} radius={[0, 8, 8, 0]} />
               </BarChart>
             </ResponsiveContainer>
           ) : (

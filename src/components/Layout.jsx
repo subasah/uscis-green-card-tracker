@@ -1,59 +1,67 @@
-export function Header({ lastUpdated, loading, onRefresh, errors, stats }) {
+import ThemeToggle from './ThemeToggle';
+
+const TABS = [
+  { id: 'my-uscis', label: 'My USCIS case' },
+  { id: 'finder', label: 'Find in community' },
+  { id: 'detail', label: 'Action plan' },
+  { id: 'dashboard', label: 'Trends' },
+  { id: 'cases', label: 'All cases' },
+  { id: 'agents', label: 'Emma agents' },
+  { id: 'reddit', label: 'Reddit' },
+  { id: 'tutorial', label: 'Tutorial' },
+];
+
+export function AppTopBar({ activeTab, onChange, themePreference, onThemeChange, chatSlot }) {
   return (
-    <header className="app-header">
-      <div className="header-copy">
-        <p className="eyebrow">USCIS · I-485 · Community data</p>
-        <h1>USCIS Green Card Tracker</h1>
-        <p>
-          Analyze your USCIS case JSON and compare it with community I-485 tracker data — timelines, block numbers, approval estimates, and next steps.
-        </p>
-        {stats ? (
-          <p className="header-stats">
-            {stats.cases} cases · {stats.agents} agent chats
-          </p>
-        ) : null}
+    <header className="app-topbar">
+      <div className="app-topbar-row">
+        <h1 className="app-title">USCIS Green Card Tracker</h1>
+        <div className="app-topbar-tools">
+          {chatSlot}
+          {onThemeChange ? (
+            <ThemeToggle preference={themePreference} onChange={onThemeChange} />
+          ) : null}
+        </div>
       </div>
-      <div className="header-actions">
-        <button type="button" className="refresh-button" onClick={onRefresh} disabled={loading}>
-          {loading ? 'Refreshing…' : 'Refresh data'}
-        </button>
-        {lastUpdated ? <span className="updated-at">Updated {lastUpdated.toLocaleString()}</span> : null}
-        {errors.length ? (
-          <details className="error-box">
-            <summary>{errors.length} sheet(s) failed to load</summary>
-            <ul>{errors.map((error) => <li key={error}>{error}</li>)}</ul>
-          </details>
-        ) : null}
-      </div>
+
+      <nav className="tab-nav tab-nav-compact" aria-label="Main navigation">
+        {TABS.map((tab) => (
+          <button
+            key={tab.id}
+            type="button"
+            className={activeTab === tab.id ? 'active' : ''}
+            onClick={() => onChange(tab.id)}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </nav>
     </header>
   );
 }
 
-export function NavTabs({ activeTab, onChange }) {
-  const tabs = [
-    { id: 'my-uscis', label: 'My USCIS case' },
-    { id: 'finder', label: 'Find in community' },
-    { id: 'detail', label: 'Action plan' },
-    { id: 'dashboard', label: 'Trends' },
-    { id: 'cases', label: 'All cases' },
-    { id: 'agents', label: 'Emma agents' },
-    { id: 'reddit', label: 'Reddit' },
-    { id: 'tutorial', label: 'Tutorial' },
-  ];
-
+export function DataRefreshBar({ loading, lastUpdated, caseCount, onRefresh, errors }) {
   return (
-    <nav className="tab-nav">
-      {tabs.map((tab) => (
-        <button
-          key={tab.id}
-          type="button"
-          className={activeTab === tab.id ? 'active' : ''}
-          onClick={() => onChange(tab.id)}
-        >
-          {tab.label}
+    <div className="data-refresh-bar">
+      <div className="data-refresh-copy">
+        <strong>Community spreadsheet</strong>
+        <span className="data-refresh-meta">
+          {caseCount} cases
+          {lastUpdated ? ` · updated ${lastUpdated.toLocaleString()}` : ''}
+        </span>
+      </div>
+      <div className="data-refresh-actions">
+        {errors.length ? (
+          <details className="error-box error-box-inline">
+            <summary>{errors.length} sheet(s) failed</summary>
+            <ul>{errors.map((error) => <li key={error}>{error}</li>)}</ul>
+          </details>
+        ) : null}
+        <button type="button" className="toolbar-button" onClick={onRefresh} disabled={loading}>
+          {loading ? 'Refreshing…' : 'Refresh spreadsheet'}
         </button>
-      ))}
-    </nav>
+      </div>
+    </div>
   );
 }
 
