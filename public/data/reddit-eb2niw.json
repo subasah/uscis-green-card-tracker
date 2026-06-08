@@ -112,6 +112,23 @@
       }
     },
     {
+      "id": "t3_1u00vdh",
+      "title": "Traffic citations",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u00vdh/traffic_citations/",
+      "author": "/u/Beautiful_Common5489",
+      "publishedAt": "2026-06-08T07:26:09+00:00",
+      "excerpt": "Hi, unfortunately I had answered no for citations and have a speeding ticket from 3 years ago. Please advice what my options are? ​",
+      "topics": [
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1tzwsr6",
       "title": "Attorney choice for EB2 NIW",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1tzwsr6/attorney_choice_for_eb2_niw/",
@@ -450,29 +467,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1tyn48t",
-      "title": "My experience with EP for EB2 NIW RFE then denial — looking for advice",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1tyn48t/my_experience_with_ep_for_eb2_niw_rfe_then_denial/",
-      "author": "/u/Ok-Equipment1190",
-      "publishedAt": "2026-06-06T17:20:04+00:00",
-      "excerpt": "I wanted to share my EB2 NIW experience with EP and ask for advice, especially from people who had a denial and then refiled. My I-140 was denied after an RFE. My background is not a traditional academic profile. I am a senior data engineer with around 10 years of experience and experience in healthcare, data engineeri…",
-      "topics": [
-        "approval",
-        "i140",
-        "lawyer",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
     }
   ],
-  "syncedAt": "2026-06-08T04:11:12.554Z",
+  "syncedAt": "2026-06-08T09:17:44.719Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
