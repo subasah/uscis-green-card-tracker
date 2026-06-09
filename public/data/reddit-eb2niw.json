@@ -35,6 +35,26 @@
       }
     },
     {
+      "id": "t3_1u0rwkw",
+      "title": "NIW I-140 Approval | No RFE | TSC | PP Upgraded | 37 Business Days",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0rwkw/niw_i140_approval_no_rfe_tsc_pp_upgraded_37/",
+      "author": "/u/GatorDanK",
+      "publishedAt": "2026-06-09T02:06:07+00:00",
+      "excerpt": "Hi all, I would like to share the timeline and little information as I also got a lot of help from the posts. Country : ROW, not 75 PE : Agricultural and Life Sciences: Help better breeding program & Improve health benefits and consumer health Publication : 4 (citation: 13 - might be not correct, but definitely Lawyer …",
+      "topics": [
+        "approval",
+        "i140",
+        "lawyer",
+        "timeline"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": "4/13/2026",
+        "mentionsCountry75": true
+      }
+    },
+    {
       "id": "t3_1u0bm0q",
       "title": "I-485 approved",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0bm0q/i485_approved/",
@@ -93,6 +113,46 @@
       }
     },
     {
+      "id": "t3_1u0qfzr",
+      "title": "April 2024 I140 NIW",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0qfzr/april_2024_i140_niw/",
+      "author": "/u/Electrical-Bird8860",
+      "publishedAt": "2026-06-09T00:59:09+00:00",
+      "excerpt": "Does anyone know whether USCIS is currently processing cases filed in April 2024 under normal processing (not premium processing)? I often see people on Reddit tracking which filing months are receiving approvals, so I'm interested in understanding the current trend. Has anyone with an April 2024 filing date and normal…",
+      "topics": [
+        "approval",
+        "i140",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u0o96y",
+      "title": "Am I cooked if my EB2 NIW I-485 case was transferred to Los Angeles field office? How fast is the processing time for cases like mine?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0o96y/am_i_cooked_if_my_eb2_niw_i485_case_was/",
+      "author": "/u/Shebaro",
+      "publishedAt": "2026-06-08T23:22:37+00:00",
+      "excerpt": "Single Filer with medical exam attached when filing. PD: 07/07/2025 (approved I-140 NIW) RD: 03/27/2026 Biometrics: 04/27/2026 2FTA0 right after biometrics Silent updates: 05/27/2026, 05/29/2026 (this one was applied to all closed and open cases in myUSCIS account), 06/04/2026, and 06/06/2026. Transfer to LA field offi…",
+      "topics": [
+        "approval",
+        "i485",
+        "i140",
+        "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": "03/27/2026",
+        "priorityDate": "07/07/2025",
+        "mentionsCountry75": true
+      }
+    },
+    {
       "id": "t3_1u0krmx",
       "title": "Chen timeline",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0krmx/chen_timeline/",
@@ -131,14 +191,33 @@
       }
     },
     {
-      "id": "t3_1u0o96y",
-      "title": "Am I cooked if my EB2 NIW I-485 case was transferred to Los Angeles field office? How fast is the processing time for cases like mine?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0o96y/am_i_cooked_if_my_eb2_niw_i485_case_was/",
-      "author": "/u/Shebaro",
-      "publishedAt": "2026-06-08T23:22:37+00:00",
-      "excerpt": "Single Filer with medical exam attached when filing. PD: 07/07/2025 (approved I-140 NIW) RD: 03/27/2026 Biometrics: 04/27/2026 2FTA0 right after biometrics Silent updates: 05/27/2026, 05/29/2026 (this one was applied to all closed and open cases in myUSCIS account), 06/04/2026, and 06/06/2026. Transfer to LA field offi…",
+      "id": "t3_1u0rles",
+      "title": "eb2 niw i140 under normal",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0rles/eb2_niw_i140_under_normal/",
+      "author": "/u/Successful_Worry_654",
+      "publishedAt": "2026-06-09T01:51:55+00:00",
+      "excerpt": "hello anyone get approved eb2 niw i140 under normal process from nabraska service center right now nabraska service center show timeline 26 month 80% case sloved so my question is before 26 month anyone get approved like 16 month or 21 month??",
       "topics": [
         "approval",
+        "i140",
+        "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u0rezt",
+      "title": "Anyone have experience with the Minneapolis–St. Paul Field Office for I-485?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0rezt/anyone_have_experience_with_the_minneapolisst/",
+      "author": "/u/Intrinsic137",
+      "publishedAt": "2026-06-09T01:43:35+00:00",
+      "excerpt": "Hi everyone, I recently got an update from an EMMA agent that, after a long hold, my I-485 case has been transferred to the Minneapolis–St. Paul Field Office . This is a non-local field office for me. Has anyone here had experience with this field office for I-485 processing? How long did it take for them to make a fin…",
+      "topics": [
         "i485",
         "i140",
         "timeline",
@@ -146,9 +225,64 @@
       ],
       "signals": {
         "blockNumber": null,
-        "receiptDate": "03/27/2026",
-        "priorityDate": "07/07/2025",
-        "mentionsCountry75": true
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u0rbiw",
+      "title": "AOS EAD and STEM OPT EAD",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0rbiw/aos_ead_and_stem_opt_ead/",
+      "author": "/u/MaleficentFan9318",
+      "publishedAt": "2026-06-09T01:39:02+00:00",
+      "excerpt": "Hi I received EAD from my pending i-485 few weeks ago. My OPT will be expired in a month. Should I apply for STEM OPT or should I use the EAD from i-485.",
+      "topics": [
+        "i485"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u0qtjq",
+      "title": "Recommendations for a WeGreened (Chen) lawyer to handle an RFE",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0qtjq/recommendations_for_a_wegreened_chen_lawyer_to/",
+      "author": "/u/BigIntroduction6830",
+      "publishedAt": "2026-06-09T01:16:11+00:00",
+      "excerpt": "Hey guys, does anyone have any recommendations for a WeGreened (Chen) lawyer to handle an RFE? I got an RFE for my EB2-NIW last week. For the initial filing, I was randomly assigned xxx, but I wasn't really happy with his turnaround time. Just wanted to see if anyone here has a specific WG lawyer they'd recommend for R…",
+      "topics": [
+        "i140",
+        "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u0plcn",
+      "title": "No biometrics 45 days after filing, should I be concerned?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0plcn/no_biometrics_45_days_after_filing_should_i_be/",
+      "author": "/u/mcvain",
+      "publishedAt": "2026-06-09T00:19:57+00:00",
+      "excerpt": "Seems like almost everyone gets their biometrics appointment pretty quickly after filing I-485. My receipt was 45 days ago and I received a silent update about 25 days ago, and then nothing since. Nothing in the documents section. Wondering if it means anything or if anyone has encountered such a timeline before!",
+      "topics": [
+        "i485",
+        "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
       }
     },
     {
@@ -180,26 +314,6 @@
       "excerpt": "Hi everyone, I’m exploring EB-2 NIW as a backup option after a recent PERM denial and would appreciate honest feedback on whether my profile is competitive. Background Indian citizen H-1B holder Professional Engineer (PE) licensed in Missouri Engineer-in-Training (EIT) Civil Engineer specializing in transportation and …",
       "topics": [
         "i140",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u0mvns",
-      "title": "Anyone have experirence with MINNEAPOLIS-ST. PAUL FIELD OFFICE? (I485)",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0mvns/anyone_have_experirence_with_minneapolisst_paul/",
-      "author": "/u/Intrinsic137",
-      "publishedAt": "2026-06-08T22:25:39+00:00",
-      "excerpt": "I just recently got an update from EMMA that after a long hold, my case moved to MINNEAPOLIS-ST. PAUL FIELD OFFICE. Has anyone experienced with this field office? How long do they take to finalize the decision (it's non-local for me)! My RD: Oct 1=2025, PD, Jan 24, waiting almost 8 Months!",
-      "topics": [
-        "i485",
-        "i140",
-        "timeline",
         "question"
       ],
       "signals": {
@@ -361,124 +475,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1tzw39g",
-      "title": "November 2025, I-485 Filers (NIW/EB2)",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1tzw39g/november_2025_i485_filers_niweb2/",
-      "author": "/u/Jazzlike-Election-59",
-      "publishedAt": "2026-06-08T03:08:32+00:00",
-      "excerpt": "Hi everyone! I filed my I-485 in the first week of November and completed biometrics in the second week of December. My EAD (without AP) was approved at the end of February, but my I-485 is still in process. I spoke with three different Emma agents and got mixed responses—one said my case was transferred to the field o…",
-      "topics": [
-        "approval",
-        "i485",
-        "i140",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1tzi0o7",
-      "title": "Approved - EB2 - ROW - 75 Countries",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1tzi0o7/approved_eb2_row_75_countries/",
-      "author": "/u/usman17888",
-      "publishedAt": "2026-06-07T17:18:16+00:00",
-      "excerpt": "Hi Everyone, Approved Receipt date: 10/24/25 From ROW + 75 counties FTA1 in Feb (2/11) EAD in April (1/4) FTA1 in 6/3/2026. Day after we got multiple silent updates Principle and one derivatives Approved on 6/5 and other two derivatives 6/7 approved after 24h of last. Best of luck to all of you.",
-      "topics": [
-        "approval",
-        "timeline"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": true
-      }
-    },
-    {
-      "id": "t3_1u08hza",
-      "title": "I140 tracker",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u08hza/i140_tracker/",
-      "author": "/u/Background_Fill_9506",
-      "publishedAt": "2026-06-08T13:50:04+00:00",
-      "excerpt": "Folks, I was checking TrackMyI140 and noticed that some cases were updated to “Case Is Still Being Processed” just 2–3 weeks after the receipt notice. However, the website still shows those cases as being earlier than mine. I understand those are not premium processing cases. Is there any way to estimate how many premi…",
-      "topics": [
-        "i140",
-        "timeline",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u08hnk",
-      "title": "I140 tracker",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u08hnk/i140_tracker/",
-      "author": "/u/Background_Fill_9506",
-      "publishedAt": "2026-06-08T13:49:47+00:00",
-      "excerpt": "Folks, I was checking TrackMyI140 and noticed that some cases were updated to “Case Is Still Being Processed” just 2–3 weeks after the receipt notice. However, the website still shows those cases as being earlier than mine. I understand those are not premium processing cases. Is there any way to estimate how many premi…",
-      "topics": [
-        "i140",
-        "timeline",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1tzukxj",
-      "title": "Hello! Any October-2025 I485 Filers Still Waiting for Approval?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1tzukxj/hello_any_october2025_i485_filers_still_waiting/",
-      "author": "/u/Intrinsic137",
-      "publishedAt": "2026-06-08T01:55:00+00:00",
-      "excerpt": "Hi, I just wanted to check how many October 2025 filers are still waiting for I-485 approval, especially those whose cases are still at the NBC. My case is still pending, and I am trying to understand if many October filers are in the same situation. For those who are still waiting: What is your filing date? Is your ca…",
-      "topics": [
-        "approval",
-        "i485",
-        "i140",
-        "timeline",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1tzt0af",
-      "title": "Has anyone else received a silent update around midnight between 6/5 and 6/6?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1tzt0af/has_anyone_else_received_a_silent_update_around/",
-      "author": "/u/SportSuccessful1151",
-      "publishedAt": "2026-06-08T00:40:15+00:00",
-      "excerpt": "",
-      "topics": [
-        "i485",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
     }
   ],
-  "syncedAt": "2026-06-08T23:57:17.664Z",
+  "syncedAt": "2026-06-09T02:47:30.421Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
