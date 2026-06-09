@@ -302,26 +302,6 @@
       }
     },
     {
-      "id": "t3_1u0krmx",
-      "title": "Chen timeline",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0krmx/chen_timeline/",
-      "author": "/u/AcceptableBase5678",
-      "publishedAt": "2026-06-08T21:03:54+00:00",
-      "excerpt": "I have finished working on my NIW petition with Chen, and today they said they will now file the package. Does anyone know how long it takes for them to actually mail the package? TIA",
-      "topics": [
-        "i140",
-        "lawyer",
-        "timeline",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
       "id": "t3_1u0sw01",
       "title": "NIW for DevOps Engineers",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0sw01/niw_for_devops_engineers/",
@@ -370,6 +350,26 @@
       "topics": [
         "i140",
         "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u0krmx",
+      "title": "Chen timeline",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0krmx/chen_timeline/",
+      "author": "/u/AcceptableBase5678",
+      "publishedAt": "2026-06-08T21:03:54+00:00",
+      "excerpt": "I have finished working on my NIW petition with Chen, and today they said they will now file the package. Does anyone know how long it takes for them to actually mail the package? TIA",
+      "topics": [
+        "i140",
+        "lawyer",
+        "timeline",
         "question"
       ],
       "signals": {
@@ -475,7 +475,7 @@
       }
     }
   ],
-  "syncedAt": "2026-06-09T06:40:31.856Z",
+  "syncedAt": "2026-06-09T10:28:17.977Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
