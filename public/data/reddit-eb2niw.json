@@ -58,12 +58,49 @@
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0ux0a/i485_approved/",
       "author": "/u/TrickLong6155",
       "publishedAt": "2026-06-09T04:32:29+00:00",
-      "excerpt": "Hello everyone, First, thank you to this community,it was helpful throughout the entire process. I got my I-485 approved on 06/07/2026. I just wanted to share my timeline, as many others have done: PD: June 20th 2025 NIW-ROW (one of the 79 countries- single filer) I-485 received: 03/08/2026 Biometrics: 04/08/2026 Appro…",
+      "excerpt": "Hello everyone, First, thank you to this community,it was helpful throughout the entire process. I got my I-485 approved on 06/07/2026. I just wanted to share my timeline, as many others have done: PD: June 20th 2025 NIW-ROW (one of the 75 countries- single filer) I-485 received: 03/08/2026 Biometrics: 04/08/2026 Appro…",
       "topics": [
         "approval",
         "i485",
         "i140",
         "timeline"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": true
+      }
+    },
+    {
+      "id": "t3_1u1dz9n",
+      "title": "Recent LA FO transferred cases",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1dz9n/recent_la_fo_transferred_cases/",
+      "author": "/u/Ordinary-Poetry9310",
+      "publishedAt": "2026-06-09T18:46:33+00:00",
+      "excerpt": "Hi, Recent LA FO transferred cases, did you get any 3rd FTAO or silent updates after the transfer? Thanks in advance.",
+      "topics": [
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u1d2ob",
+      "title": "Confusion about receipt notice for i485",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1d2ob/confusion_about_receipt_notice_for_i485/",
+      "author": "/u/ChemistryNo9348",
+      "publishedAt": "2026-06-09T18:14:25+00:00",
+      "excerpt": "If I mail my EB2 NIW and concurrent i485 filing next week, what will be the priority date for i140 and receipt date for i1485? Is it the date the filing was received or when the system generates the notice? I am worried that if receipts take multiple weeks to be generated, my i485 will be rejected if the visa bulletin …",
+      "topics": [
+        "i485",
+        "i140",
+        "timeline",
+        "question"
       ],
       "signals": {
         "blockNumber": null,
@@ -208,6 +245,25 @@
       }
     },
     {
+      "id": "t3_1u0vrvf",
+      "title": "EB-2 NIW vs Employer-Sponsored EB-3",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0vrvf/eb2_niw_vs_employersponsored_eb3/",
+      "author": "/u/Dry_Stretch_5705",
+      "publishedAt": "2026-06-09T05:17:09+00:00",
+      "excerpt": "Hi everyone, I am a Clinical Laboratory Scientist currently working in the United States on H-1B status, and I am looking for advice regarding whether pursuing an EB-2 NIW would be a viable option compared to continuing with my employer-sponsored EB-3 process. My Background Bachelor's Degree in Clinical Laboratory Scie…",
+      "topics": [
+        "i140",
+        "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u0bzpz",
       "title": "Before choosing an NIW lawyer, audit your own case this way",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0bzpz/before_choosing_an_niw_lawyer_audit_your_own_case/",
@@ -291,25 +347,6 @@
       "excerpt": "Hi I received EAD from my pending i-485 few weeks ago. My OPT will be expired in a month. Should I apply for STEM OPT or should I use the EAD from i-485.",
       "topics": [
         "i485"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u0vrvf",
-      "title": "EB-2 NIW vs Employer-Sponsored EB-3",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0vrvf/eb2_niw_vs_employersponsored_eb3/",
-      "author": "/u/Dry_Stretch_5705",
-      "publishedAt": "2026-06-09T05:17:09+00:00",
-      "excerpt": "Hi everyone, I am a Clinical Laboratory Scientist currently working in the United States on H-1B status, and I am looking for advice regarding whether pursuing an EB-2 NIW would be a viable option compared to continuing with my employer-sponsored EB-3 process. My Background Bachelor's Degree in Clinical Laboratory Scie…",
-      "topics": [
-        "i140",
-        "lawyer",
-        "question"
       ],
       "signals": {
         "blockNumber": null,
@@ -434,48 +471,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1u0plcn",
-      "title": "No biometrics 45 days after filing, should I be concerned?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0plcn/no_biometrics_45_days_after_filing_should_i_be/",
-      "author": "/u/mcvain",
-      "publishedAt": "2026-06-09T00:19:57+00:00",
-      "excerpt": "Seems like almost everyone gets their biometrics appointment pretty quickly after filing I-485. My receipt was 45 days ago and I received a silent update about 25 days ago, and then nothing since. Nothing in the documents section. Wondering if it means anything or if anyone has encountered such a timeline before!",
-      "topics": [
-        "i485",
-        "timeline",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u0n5fg",
-      "title": "I-485 adjustment of status: Chances of Interview or waiver? Clarification requested.",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0n5fg/i485_adjustment_of_status_chances_of_interview_or/",
-      "author": "/u/Dry-Lawyer17",
-      "publishedAt": "2026-06-08T22:36:55+00:00",
-      "excerpt": "Hi all, I got this from Emma today. Does that mean interview is scheduled or will be scheduled soon? EB-2 NIW I-485, 2xDerivatives, RD: 04/22/2026, Bio: 06/03/2026, 2xFTA0 after biometrics done, 1x silent update day after biometric. I appreciate your clarification on this update. Here is the reply from Emma: \"Case appe…",
-      "topics": [
-        "i485",
-        "i140",
-        "timeline",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": "04/22/2026",
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
     }
   ],
-  "syncedAt": "2026-06-09T16:25:42.165Z",
+  "syncedAt": "2026-06-09T19:07:36.684Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
