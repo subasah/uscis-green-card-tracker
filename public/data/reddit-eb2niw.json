@@ -93,6 +93,26 @@
       }
     },
     {
+      "id": "t3_1u2ffw6",
+      "title": "Changing State after submitting I-485",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2ffw6/changing_state_after_submitting_i485/",
+      "author": "/u/zillur-av",
+      "publishedAt": "2026-06-10T21:25:28+00:00",
+      "excerpt": "Hello all, I submitted my NIW based I-485 in late April and have biometrics in early June. I plan to move to mid-west from west coast next month to start a new job. Will this increase my I-485 processing time? Also, since EB2 ROW is current, how does USCIS prioritizes cases? Like whoever has earlier priority date are p…",
+      "topics": [
+        "i485",
+        "i140",
+        "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u28nu2",
       "title": "Any recent I-485 approvals from Los Angeles Field Office? Please share your timeline below.",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u28nu2/any_recent_i485_approvals_from_los_angeles_field/",
@@ -111,6 +131,60 @@
         "receiptDate": "03/27/2026",
         "priorityDate": "07/07/2025",
         "mentionsCountry75": true
+      }
+    },
+    {
+      "id": "t3_1u2ae6h",
+      "title": "I recently received an RFE and the deadline is approaching quickly. I am represented by Chen Attorney, but they have not responded, and I have called several times without receiving a response on my messages. Is anyone else currently experiencing similar communication delays?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2ae6h/i_recently_received_an_rfe_and_the_deadline_is/",
+      "author": "/u/Budget-Importance163",
+      "publishedAt": "2026-06-10T18:21:06+00:00",
+      "excerpt": "",
+      "topics": [
+        "i140",
+        "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u2gh1q",
+      "title": "Guam field office - EB2 NIW based AOS",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2gh1q/guam_field_office_eb2_niw_based_aos/",
+      "author": "/u/Status-Scarcity3742",
+      "publishedAt": "2026-06-10T22:05:39+00:00",
+      "excerpt": "Any recent approvals of EB2 NIW based AOS from Guam field office? Could you please share the timeline",
+      "topics": [
+        "i485",
+        "i140",
+        "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u2fbfk",
+      "title": "Independent Recommendation Letters Guidnace- DBA",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2fbfk/independent_recommendation_letters_guidnace_dba/",
+      "author": "/u/Bobz93",
+      "publishedAt": "2026-06-10T21:20:51+00:00",
+      "excerpt": "I am struggling to find independent letters as a database administrator. I have tried cold out online but no luck. Everyone seems to get scared from the thought of U.S. immigration. Is there anywhere someone can provide guidance on where to get them from, or if someone can help in the field It would be greatly apprecia…",
+      "topics": [],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
       }
     },
     {
@@ -153,14 +227,14 @@
       }
     },
     {
-      "id": "t3_1u2dcjj",
-      "title": "Canadians / International Applicants: How Did You Pay USCIS Filing Fees (G-1450) for EB-2 NIW?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2dcjj/canadians_international_applicants_how_did_you/",
-      "author": "/u/dvg16",
-      "publishedAt": "2026-06-10T20:07:20+00:00",
-      "excerpt": "Hi everyone, I’m a Canadian citizen preparing to file my EB-2 NIW petition and have run into an issue with the USCIS filing fee payment. My law firm informed me that USCIS Form G-1450 requires the credit card to be issued by a U.S. bank, and that foreign-issued credit cards (including Amex Canada) are generally not acc…",
+      "id": "t3_1u2dpi1",
+      "title": "How to Get Old Traffic Citation Copies for I-485?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2dpi1/how_to_get_old_traffic_citation_copies_for_i485/",
+      "author": "/u/RKabirx",
+      "publishedAt": "2026-06-10T20:20:26+00:00",
+      "excerpt": "Hi everyone, I am preparing my I-485 package, and my attorney asked me to upload copies of my previous traffic tickets. I have had speeding tickets starting from 2016 to 2024 in Michigan, Ohio, and Tennessee. I don’t have the physical copies anymore. I can't find any payment receipts or emails. For those who had old tr…",
       "topics": [
-        "i140",
+        "i485",
         "lawyer",
         "question"
       ],
@@ -172,12 +246,12 @@
       }
     },
     {
-      "id": "t3_1u2cxxa",
-      "title": "After an NIW denial, do not start with appeal vs refile",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2cxxa/after_an_niw_denial_do_not_start_with_appeal_vs/",
-      "author": "/u/Dapper-Ad-2100",
-      "publishedAt": "2026-06-10T19:53:01+00:00",
-      "excerpt": "After an NIW denial, a lot of people jump straight to: Should I appeal, file a motion, or refile? That question matters, but it is not the first one I would ask. The first question is: What exactly did USCIS reject? Those are different problems. Sometimes the officer accepts that the field is important, but does not ac…",
+      "id": "t3_1u2dcjj",
+      "title": "Canadians / International Applicants: How Did You Pay USCIS Filing Fees (G-1450) for EB-2 NIW?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2dcjj/canadians_international_applicants_how_did_you/",
+      "author": "/u/dvg16",
+      "publishedAt": "2026-06-10T20:07:20+00:00",
+      "excerpt": "Hi everyone, I’m a Canadian citizen preparing to file my EB-2 NIW petition and have run into an issue with the USCIS filing fee payment. My law firm informed me that USCIS Form G-1450 requires the credit card to be issued by a U.S. bank, and that foreign-issued credit cards (including Amex Canada) are generally not acc…",
       "topics": [
         "i140",
         "lawyer",
@@ -234,7 +308,7 @@
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2cin3/attorney_fee_full_upfrontinstallment_for_good/",
       "author": "/u/HelpSeeker10",
       "publishedAt": "2026-06-10T19:37:37+00:00",
-      "excerpt": "Is it OK to pay full payment upfront to Ellis poter? I’ve got mixed info in Google saying- upfront may slow down preparation and submition time. Not sure what to do- Upfront full or installment!TIA",
+      "excerpt": "Is it OK to pay full payment upfront to Ellis porter? I’ve got mixed info in Google saying- upfront may slow down preparation and submission time. Not sure what to do- Upfront full or installment!TIA",
       "topics": [
         "lawyer",
         "question"
@@ -267,25 +341,6 @@
       }
     },
     {
-      "id": "t3_1u2ae6h",
-      "title": "I recently received an RFE and the deadline is approaching quickly. I am represented by Chen Attorney, but they have not responded, and I have called several times without receiving a response on my messages. Is anyone else currently experiencing similar communication delays?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2ae6h/i_recently_received_an_rfe_and_the_deadline_is/",
-      "author": "/u/Budget-Importance163",
-      "publishedAt": "2026-06-10T18:21:06+00:00",
-      "excerpt": "",
-      "topics": [
-        "i140",
-        "lawyer",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
       "id": "t3_1u1r2ln",
       "title": "EB2 NIW Denied After Prong 1 + Prong 3 RFE - AI Security Profile, 104 Citations, 2 Pending Patents.",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1r2ln/eb2_niw_denied_after_prong_1_prong_3_rfe_ai/",
@@ -314,6 +369,25 @@
       "publishedAt": "2026-06-10T17:25:00+00:00",
       "excerpt": "Please help. I provided the wrong answer NO to question 6. As a result, when I submitted my application online, I was charged $1315 instead of $1015. What can I do to receive the refund? Thanks!",
       "topics": [
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u2cxxa",
+      "title": "After an NIW denial, do not start with appeal vs refile",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2cxxa/after_an_niw_denial_do_not_start_with_appeal_vs/",
+      "author": "/u/Dapper-Ad-2100",
+      "publishedAt": "2026-06-10T19:53:01+00:00",
+      "excerpt": "After an NIW denial, a lot of people jump straight to: Should I appeal, file a motion, or refile? That question matters, but it is not the first one I would ask. The first question is: What exactly did USCIS reject? Those are different problems. Sometimes the officer accepts that the field is important, but does not ac…",
+      "topics": [
+        "i140",
+        "lawyer",
         "question"
       ],
       "signals": {
@@ -396,89 +470,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1u1ktgq",
-      "title": "Free webinar Thurs 6/11: retired USCIS supervisor (33 yrs) on the new I-485 \"discretion\" memo (PM-602-0199)",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ktgq/free_webinar_thurs_611_retired_uscis_supervisor/",
-      "author": "/u/JoeKwonLaw",
-      "publishedAt": "2026-06-09T23:01:43+00:00",
-      "excerpt": "On May 21, USCIS issued Policy Memorandum PM-602-0199, which reframes adjustment of status as \"a matter of discretion and administrative grace.\" It doesn't change the law, but it does change how officers approach every pending I-485 — and the calculus between AOS and consular processing after an I-140 approval. I'm a b…",
-      "topics": [
-        "approval",
-        "i485",
-        "i140",
-        "lawyer"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u18kz8",
-      "title": "I-140 denial and seeking advice for traveling outside USA",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u18kz8/i140_denial_and_seeking_advice_for_traveling/",
-      "author": "/u/Negative_Quality7637",
-      "publishedAt": "2026-06-09T15:38:21+00:00",
-      "excerpt": "Hello everyone, My EB-2 NIW I-140 petition was recently denied. I did not file a concurrent I-485 application, and I have never filed an I-485. I am currently maintaining valid F-1 status, and my visa remains valid for approximately two more years. I am planning to travel outside the United States to visit my family an…",
-      "topics": [
-        "i485",
-        "i140",
-        "lawyer",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u1sxpz",
-      "title": "Filing I-485 AOS only, NO EAD and I-131, does it make the timeline longer?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1sxpz/filing_i485_aos_only_no_ead_and_i131_does_it_make/",
-      "author": "/u/Steamed_Momo",
-      "publishedAt": "2026-06-10T05:21:50+00:00",
-      "excerpt": "Hi everyone, I am planning to file i-485 soon. My priority date is November 2024, with an approved EB-2 NIW (ROW 75 list). Since I have an H1B valid until March 2028, I was thinking of filing only an I-485 without paying for an advance parole and EAD. I am curious if it's true that filing only an I-485 takes longer to …",
-      "topics": [
-        "approval",
-        "i485",
-        "i140",
-        "timeline",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": true
-      }
-    },
-    {
-      "id": "t3_1u1rxk8",
-      "title": "RFE or still processing?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1rxk8/rfe_or_still_processing/",
-      "author": "/u/King_Wolf__",
-      "publishedAt": "2026-06-10T04:29:20+00:00",
-      "excerpt": "So I emailed previous employer and cc’d Fragomen attorney and asked what’s happening with my NIW. After I left job previous employer said they won’t withdraw unless it’s RFE. Now 1) Fragomen Attorney said yesterday in email “According to our records, the withdrawal filing you are seeing pertains to the H-1B petition fi…",
-      "topics": [
-        "i140",
-        "lawyer",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
     }
   ],
-  "syncedAt": "2026-06-10T20:12:03.450Z",
+  "syncedAt": "2026-06-10T22:47:12.478Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
