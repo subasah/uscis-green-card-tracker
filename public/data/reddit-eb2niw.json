@@ -96,6 +96,25 @@
       }
     },
     {
+      "id": "t3_1u1ykxi",
+      "title": "EB-2 NIW Update",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ykxi/eb2_niw_update/",
+      "author": "/u/raoimran7861",
+      "publishedAt": "2026-06-10T10:42:58+00:00",
+      "excerpt": "My self-petitioned EB-2 NIW package was delivered to the USCIS Dallas Lockbox on June 8, 2026, and the filing fee (USD 1,015) was successfully charged on June 10, 2026. Background: • MBA (foreign degree evaluated) • 17+ years professional experience • Workforce Readiness, Talent Acquisition, Workforce Mobilization, Onb…",
+      "topics": [
+        "i140",
+        "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u1ksir",
       "title": "April Filer Finally Moved to FO",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ksir/april_filer_finally_moved_to_fo/",
@@ -460,29 +479,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1u0rwkw",
-      "title": "NIW I-140 Approval | No RFE | TSC | PP Upgraded | 37 Business Days",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0rwkw/niw_i140_approval_no_rfe_tsc_pp_upgraded_37/",
-      "author": "/u/GatorDanK",
-      "publishedAt": "2026-06-09T02:06:07+00:00",
-      "excerpt": "Hi all, I would like to share the timeline and little information as I also got a lot of help from the posts. Country : ROW, not 75 PE : Agricultural and Life Sciences: Help better breeding program & Improve health benefits and consumer health Publication : 4 (citation: 13 - might be not correct, but definitely Lawyer …",
-      "topics": [
-        "approval",
-        "i140",
-        "lawyer",
-        "timeline"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": "4/13/2026",
-        "mentionsCountry75": true
-      }
     }
   ],
-  "syncedAt": "2026-06-10T06:59:03.945Z",
+  "syncedAt": "2026-06-10T10:56:43.095Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
