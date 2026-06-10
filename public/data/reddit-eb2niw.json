@@ -96,6 +96,25 @@
       }
     },
     {
+      "id": "t3_1u22q1d",
+      "title": "NIW",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u22q1d/niw/",
+      "author": "/u/Sad-Indication-7532",
+      "publishedAt": "2026-06-10T13:48:01+00:00",
+      "excerpt": "Hello Everyone, I am considering applying for Eb2-NIW, from industrial prospective. Iam working in global company (AI and advanced computing) however I got rejected by Chen and got accepted by EP / Rajw / Shawn sedaghat and Jason Croft as well ( peak immigration) Jason informed me that even my case is strong , there is…",
+      "topics": [
+        "i140",
+        "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u1ykxi",
       "title": "EB-2 NIW Update",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ykxi/eb2_niw_update/",
@@ -125,6 +144,24 @@
         "i485",
         "timeline",
         "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u1twv1",
+      "title": "Approval/Denial from officer xm1911",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1twv1/approvaldenial_from_officer_xm1911/",
+      "author": "/u/lofy-",
+      "publishedAt": "2026-06-10T06:15:42+00:00",
+      "excerpt": "Has anyone recently been approved or denied by officer xm1911! Specifically, after receiving an RFE!",
+      "topics": [
+        "approval",
+        "i140"
       ],
       "signals": {
         "blockNumber": null,
@@ -183,24 +220,6 @@
         "i140",
         "lawyer",
         "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u1twv1",
-      "title": "Approval/Denial from officer xm1911",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1twv1/approvaldenial_from_officer_xm1911/",
-      "author": "/u/lofy-",
-      "publishedAt": "2026-06-10T06:15:42+00:00",
-      "excerpt": "Has anyone recently been approved or denied by officer xm1911! Specifically, after receiving an RFE!",
-      "topics": [
-        "approval",
-        "i140"
       ],
       "signals": {
         "blockNumber": null,
@@ -460,28 +479,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1u1j7c8",
-      "title": "How long does it take to process PP application (i907)?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1j7c8/how_long_does_it_take_to_process_pp_application/",
-      "author": "/u/SmileBeginning779",
-      "publishedAt": "2026-06-09T21:56:33+00:00",
-      "excerpt": "My PP package was delivered to Elgin lockbox via FedEx on Monday, 6/1/26. However, one week later, my cc hasn’t been charged yet. How long does it take for uscis to process i907 form and send out an email?",
-      "topics": [
-        "i140",
-        "timeline",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
     }
   ],
-  "syncedAt": "2026-06-10T10:56:43.095Z",
+  "syncedAt": "2026-06-10T14:20:15.152Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
