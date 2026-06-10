@@ -35,6 +35,26 @@
       }
     },
     {
+      "id": "t3_1u1ncph",
+      "title": "I-485 Approved Seattle FO",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ncph/i485_approved_seattle_fo/",
+      "author": "/u/Critical_Arm_5493",
+      "publishedAt": "2026-06-10T00:52:26+00:00",
+      "excerpt": "Hello everyone, My I-485 was approved today. Self-petition EB2-NIW (so I-485 J is not applicable) PD: 09/23/2024 RD: 02/11/2026 Bio: 03/09/2026 Silent updates: 03/17, 04/16, 04/29, 06/08 2 FTA0 on 03/09 3rd FTA0 referencing my initial biometrics on 06/04 3 silent updates during business hour on 06/08 2 H008 code and st…",
+      "topics": [
+        "approval",
+        "i485",
+        "i140",
+        "timeline"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": "02/11/2026",
+        "priorityDate": "09/23/2024",
+        "mentionsCountry75": true
+      }
+    },
+    {
       "id": "t3_1u1ib9h",
       "title": "I-485 Approved | EB2-NIW | F-1 STEM OPT | Travel-Ban Country",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ib9h/i485_approved_eb2niw_f1_stem_opt_travelban_country/",
@@ -55,23 +75,24 @@
       }
     },
     {
-      "id": "t3_1u1ncph",
-      "title": "I-485 Approved Seattle FO",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ncph/i485_approved_seattle_fo/",
-      "author": "/u/Critical_Arm_5493",
-      "publishedAt": "2026-06-10T00:52:26+00:00",
-      "excerpt": "Hello everyone, My I-485 was approved today. Self-petition EB2-NIW (so I-485 J is not applicable) PD: 09/23/2024 RD: 02/11/2026 Bio: 03/09/2026 Silent updates: 03/17, 04/16, 04/29, 06/08 2 FTA0 on 03/09 3rd FTA0 referencing my initial biometrics on 06/04 3 silent updates during business hour on 06/08 2 H008 code and st…",
+      "id": "t3_1u1r2ln",
+      "title": "EB2 NIW Denied After Prong 1 + Prong 3 RFE - AI Security Profile, 104 Citations, 2 Pending Patents.",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1r2ln/eb2_niw_denied_after_prong_1_prong_3_rfe_ai/",
+      "author": "/u/HeavyHitter__",
+      "publishedAt": "2026-06-10T03:45:25+00:00",
+      "excerpt": "Hi all, My EB2 NIW I-140 was denied today after an RFE response. I’m waiting for the written denial notice, but I’m trying to understand what others have done after a similar denial. Pretty sad and shocked. Filed with Ellis Porter at Nebraska Service Center Case timeline Initial filing March 2025, did not include recom…",
       "topics": [
         "approval",
-        "i485",
         "i140",
-        "timeline"
+        "lawyer",
+        "timeline",
+        "question"
       ],
       "signals": {
         "blockNumber": null,
-        "receiptDate": "02/11/2026",
-        "priorityDate": "09/23/2024",
-        "mentionsCountry75": true
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
       }
     },
     {
@@ -152,12 +173,90 @@
       }
     },
     {
-      "id": "t3_1u1ohsm",
-      "title": "Feedback on my EB-2 NIW profile (civil engineer)",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ohsm/feedback_on_my_eb2_niw_profile_civil_engineer/",
-      "author": "/u/Comfortable-Use-7025",
-      "publishedAt": "2026-06-10T01:45:19+00:00",
-      "excerpt": "Hi all. Looking for honest feedback on my profile. I have done a lot of research and preparation but want a sanity check from people who have been through this process. Background BS Civil Engineering, graduated 2019, outside the US. MS Construction Management, outside the US. MS Civil Engineering, US university, award…",
+      "id": "t3_1u1twv1",
+      "title": "Approval/Denial from officer xm1911",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1twv1/approvaldenial_from_officer_xm1911/",
+      "author": "/u/lofy-",
+      "publishedAt": "2026-06-10T06:15:42+00:00",
+      "excerpt": "Has anyone recently been approved or denied by officer xm1911! Specifically, after receiving an RFE!",
+      "topics": [
+        "approval",
+        "i140"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u1sxpz",
+      "title": "Filing I-485 AOS only, NO EAD and I-131, does it make the timeline longer?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1sxpz/filing_i485_aos_only_no_ead_and_i131_does_it_make/",
+      "author": "/u/Steamed_Momo",
+      "publishedAt": "2026-06-10T05:21:50+00:00",
+      "excerpt": "Hi everyone, I am planning to file i-485 soon. My priority date is November 2024, with an approved EB-2 NIW (ROW 75 list). Since I have an H1B valid until March 2028, I was thinking of filing only an I-485 without paying for an advance parole and EAD. I am curious if it's true that filing only an I-485 takes longer to …",
+      "topics": [
+        "approval",
+        "i485",
+        "i140",
+        "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": true
+      }
+    },
+    {
+      "id": "t3_1u1rxk8",
+      "title": "RFE or still processing?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1rxk8/rfe_or_still_processing/",
+      "author": "/u/King_Wolf__",
+      "publishedAt": "2026-06-10T04:29:20+00:00",
+      "excerpt": "So I emailed previous employer and cc’d Fragomen attorney and asked what’s happening with my NIW. After I left job previous employer said they won’t withdraw unless it’s RFE. Now 1) Fragomen Attorney said yesterday in email “According to our records, the withdrawal filing you are seeing pertains to the H-1B petition fi…",
+      "topics": [
+        "i140",
+        "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u1pwhl",
+      "title": "EB-2 NIW – Rate my approval chances? (Data Engineer, public housing / federal programs)",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1pwhl/eb2_niw_rate_my_approval_chances_data_engineer/",
+      "author": "/u/Boring-Avocado7036",
+      "publishedAt": "2026-06-10T02:50:00+00:00",
+      "excerpt": "Hi everyone, about to file my NIW self-petition and would love honest opinions on my approval chances: Profile: • 8+ years data engineering (healthcare, automotive, public housing) • Lead data role at a HUD-funded public housing authority — built their analytics platform across 55 federally funded properties • Document…",
+      "topics": [
+        "approval",
+        "i140",
+        "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u1pvmt",
+      "title": "EB-2 NIW – Rate my approval chances? (Data Engineer, public housing / federal programs)",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1pvmt/eb2_niw_rate_my_approval_chances_data_engineer/",
+      "author": "/u/Necessary-Tangelo478",
+      "publishedAt": "2026-06-10T02:48:53+00:00",
+      "excerpt": "Hi everyone, about to file my NIW self-petition and would love honest opinions on my approval chances: Profile: • 8+ years data engineering (healthcare, automotive, public housing) • Lead data role at a HUD-funded public housing authority — built their analytics platform across 55 federally funded properties • Document…",
       "topics": [
         "approval",
         "i140",
@@ -192,6 +291,26 @@
       }
     },
     {
+      "id": "t3_1u1ohsm",
+      "title": "Feedback on my EB-2 NIW profile (civil engineer)",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ohsm/feedback_on_my_eb2_niw_profile_civil_engineer/",
+      "author": "/u/Comfortable-Use-7025",
+      "publishedAt": "2026-06-10T01:45:19+00:00",
+      "excerpt": "Hi all. Looking for honest feedback on my profile. I have done a lot of research and preparation but want a sanity check from people who have been through this process. Background BS Civil Engineering, graduated 2019, outside the US. MS Construction Management, outside the US. MS Civil Engineering, US university, award…",
+      "topics": [
+        "approval",
+        "i140",
+        "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u1ikyv",
       "title": "NSC PP April 27 | Any updates?",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ikyv/nsc_pp_april_27_any_updates/",
@@ -217,25 +336,6 @@
       "publishedAt": "2026-06-09T15:14:10+00:00",
       "excerpt": "Yesterday, I received an RFE from the TSC center, though my case was accepted by NSC in Premium Processing, and today I got the soft copy of the RFE notice. Time Line : Case Filed: April 22, 2026 (PP) NSC RFE: June 8, From TSC Attacked all three prongs. Officer code XM2055. How is this officer? If I get an insight rela…",
       "topics": [
-        "i140",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u1h7cm",
-      "title": "Recently graduated, job starts in a few months. How should I complete I-485 Employment section?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1h7cm/recently_graduated_job_starts_in_a_few_months_how/",
-      "author": "/u/Upper-Finish202",
-      "publishedAt": "2026-06-09T20:42:10+00:00",
-      "excerpt": "Just got my PhD and the my next job starts in a couple of months. I secured this job many months ago and intentionally chose the start date so I could have a short break to relax. This upcoming job is also featured in my I-140 petition. I imagine this is fairly standard situation for PhD graduates. My questions: 1) How…",
-      "topics": [
-        "i485",
         "i140",
         "question"
       ],
@@ -305,6 +405,24 @@
       }
     },
     {
+      "id": "t3_1u1lunn",
+      "title": "The hardest NIW question is not “am I qualified?”",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1lunn/the_hardest_niw_question_is_not_am_i_qualified/",
+      "author": "/u/Dapper-Ad-2100",
+      "publishedAt": "2026-06-09T23:45:41+00:00",
+      "excerpt": "A lot of EB-2 NIW applicants start with the wrong question. They ask: “Am I qualified?” That matters, but it is usually not the hardest part. The harder question is: “Can my background be organized into a clear national-interest story?” Those are different things. A person can have a strong resume and still have a weak…",
+      "topics": [
+        "i140",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u1d2ob",
       "title": "Confusion about receipt notice for i485",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1d2ob/confusion_about_receipt_notice_for_i485/",
@@ -362,121 +480,9 @@
         "priorityDate": "4/13/2026",
         "mentionsCountry75": true
       }
-    },
-    {
-      "id": "t3_1u1lunn",
-      "title": "The hardest NIW question is not “am I qualified?”",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1lunn/the_hardest_niw_question_is_not_am_i_qualified/",
-      "author": "/u/Dapper-Ad-2100",
-      "publishedAt": "2026-06-09T23:45:41+00:00",
-      "excerpt": "A lot of EB-2 NIW applicants start with the wrong question. They ask: “Am I qualified?” That matters, but it is usually not the hardest part. The harder question is: “Can my background be organized into a clear national-interest story?” Those are different things. A person can have a strong resume and still have a weak…",
-      "topics": [
-        "i140",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u1fijs",
-      "title": "EB2 chances for CS PhD Candidate in AI for Educational Technology ..",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1fijs/eb2_chances_for_cs_phd_candidate_in_ai_for/",
-      "author": "/u/encode-decode",
-      "publishedAt": "2026-06-09T19:41:03+00:00",
-      "excerpt": "I am a PhD candidate in Computer Science, with a research focus on multimodal AI systems for educational technologies. My current research profile includes: • 2 top-tier journal publications • 4 peer-reviewed papers in total • 32 citations • Research in AI-driven educational technology and multimodal learning systems H…",
-      "topics": [
-        "approval",
-        "i140",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u1dz9n",
-      "title": "Recent LA FO transferred cases",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1dz9n/recent_la_fo_transferred_cases/",
-      "author": "/u/Ordinary-Poetry9310",
-      "publishedAt": "2026-06-09T18:46:33+00:00",
-      "excerpt": "Hi, Recent LA FO transferred cases, did you get any 3rd FTAO or silent updates after the transfer? Thanks in advance.",
-      "topics": [
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u0bm0q",
-      "title": "I-485 approved",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0bm0q/i485_approved/",
-      "author": "/u/born1151",
-      "publishedAt": "2026-06-08T15:43:22+00:00",
-      "excerpt": "Hello everyone, I got my I-485 approved on 06/04/2026. I just wanted to share my timeline as many others have done it: PD: march 2024 NIW-ROW (one of the 75 countries- single filer) I-485 received: 12/31/2025 Biometrics: 01/28/2026 FTAO: 01/28/2026 (2 of them) Silent updates: 02/28/2026, 03/03/2026, 05/17/2026 3rd FTAO…",
-      "topics": [
-        "approval",
-        "i485",
-        "i140",
-        "timeline"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": true
-      }
-    },
-    {
-      "id": "t3_1u0w9w5",
-      "title": "Waiting for I-485 biometrics notice (May 15 filers) — is this timeline normal?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u0w9w5/waiting_for_i485_biometrics_notice_may_15_filers/",
-      "author": "/u/New_Change3698",
-      "publishedAt": "2026-06-09T05:44:12+00:00",
-      "excerpt": "Hello everyone, I have a quick question regarding the I-485 Adjustment of Status timeline. My wife and I submitted our applications on May 15. We received our receipt notices within a week, but it's been almost 3 weeks now and we still haven't received our biometrics appointment invites. I was checking the community Go…",
-      "topics": [
-        "i485",
-        "timeline",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u12ac3",
-      "title": "EB2 NIW advise",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u12ac3/eb2_niw_advise/",
-      "author": "/u/Choice_Instance_2128",
-      "publishedAt": "2026-06-09T11:28:27+00:00",
-      "excerpt": "Hi everyone, I am looking for advice on my EB-2 NIW profile and strategy. My Profile: Current Role: Postdoc in the UK (contract ends in one year). Research Field: Impact of weather extremes on energy, agriculture, urban areas, and critical infrastructure. Education: Erasmus Master’s degree and a PhD from Italy in clima…",
-      "topics": [
-        "i140",
-        "lawyer",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
     }
   ],
-  "syncedAt": "2026-06-10T02:30:49.666Z",
+  "syncedAt": "2026-06-10T06:59:03.945Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
