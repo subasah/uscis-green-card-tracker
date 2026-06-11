@@ -113,6 +113,25 @@
       }
     },
     {
+      "id": "t3_1u2r3os",
+      "title": "Ask opinion about OPT",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2r3os/ask_opinion_about_opt/",
+      "author": "/u/OkBanana2210",
+      "publishedAt": "2026-06-11T06:26:10+00:00",
+      "excerpt": "A friend of mine not on this platform, is on regular OPT, and filing for I-140 for NIW, he can’t make much and has to use delivery accounts. Would it be an issue later on for applying I-485? Thanks",
+      "topics": [
+        "i485",
+        "i140",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u28byd",
       "title": "EB2-NIW Denied After RFE Environmental & Agricultural Science (EP) Advise Needed",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u28byd/eb2niw_denied_after_rfe_environmental/",
@@ -170,6 +189,25 @@
       }
     },
     {
+      "id": "t3_1u2dpi1",
+      "title": "How to Get Old Traffic Citation Copies for I-485?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2dpi1/how_to_get_old_traffic_citation_copies_for_i485/",
+      "author": "/u/RKabirx",
+      "publishedAt": "2026-06-10T20:20:26+00:00",
+      "excerpt": "Hi everyone, I am preparing my I-485 package, and my attorney asked me to upload copies of my previous traffic tickets. I have had speeding tickets starting from 2016 to 2024 in Michigan, Ohio, and Tennessee. I don’t have the physical copies anymore. I can't find any payment receipts or emails. For those who had old tr…",
+      "topics": [
+        "i485",
+        "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u2ffw6",
       "title": "Changing State after submitting I-485",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2ffw6/changing_state_after_submitting_i485/",
@@ -208,25 +246,6 @@
         "receiptDate": "03/27/2026",
         "priorityDate": "07/07/2025",
         "mentionsCountry75": true
-      }
-    },
-    {
-      "id": "t3_1u2dpi1",
-      "title": "How to Get Old Traffic Citation Copies for I-485?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2dpi1/how_to_get_old_traffic_citation_copies_for_i485/",
-      "author": "/u/RKabirx",
-      "publishedAt": "2026-06-10T20:20:26+00:00",
-      "excerpt": "Hi everyone, I am preparing my I-485 package, and my attorney asked me to upload copies of my previous traffic tickets. I have had speeding tickets starting from 2016 to 2024 in Michigan, Ohio, and Tennessee. I don’t have the physical copies anymore. I can't find any payment receipts or emails. For those who had old tr…",
-      "topics": [
-        "i485",
-        "lawyer",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
       }
     },
     {
@@ -396,26 +415,6 @@
       }
     },
     {
-      "id": "t3_1u1ib9h",
-      "title": "I-485 Approved | EB2-NIW | F-1 STEM OPT | Travel-Ban Country",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ib9h/i485_approved_eb2niw_f1_stem_opt_travelban_country/",
-      "author": "/u/Sea_Sympathy_3747",
-      "publishedAt": "2026-06-09T21:22:53+00:00",
-      "excerpt": "Timeline I-140 Priority Date (PD): March 2024 I-140 Approval: January 2026 (Premium Processing) I-485 Filed: February 2026 Biometrics: April 2026 Case Progress Late April 2026: Case transferred to Sacramento, CA Field Office (silent update; confirmed by USCIS agent) Non-local field office Interview waived May 2026: Fir…",
-      "topics": [
-        "approval",
-        "i485",
-        "i140",
-        "timeline"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": true
-      }
-    },
-    {
       "id": "t3_1u1r2ln",
       "title": "EB2 NIW Denied After Prong 1 + Prong 3 RFE - AI Security Profile, 104 Citations, 2 Pending Patents.",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1r2ln/eb2_niw_denied_after_prong_1_prong_3_rfe_ai/",
@@ -437,6 +436,26 @@
       }
     },
     {
+      "id": "t3_1u1ib9h",
+      "title": "I-485 Approved | EB2-NIW | F-1 STEM OPT | Travel-Ban Country",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u1ib9h/i485_approved_eb2niw_f1_stem_opt_travelban_country/",
+      "author": "/u/Sea_Sympathy_3747",
+      "publishedAt": "2026-06-09T21:22:53+00:00",
+      "excerpt": "Timeline I-140 Priority Date (PD): March 2024 I-140 Approval: January 2026 (Premium Processing) I-485 Filed: February 2026 Biometrics: April 2026 Case Progress Late April 2026: Case transferred to Sacramento, CA Field Office (silent update; confirmed by USCIS agent) Non-local field office Interview waived May 2026: Fir…",
+      "topics": [
+        "approval",
+        "i485",
+        "i140",
+        "timeline"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": true
+      }
+    },
+    {
       "id": "t3_1u2ae6h",
       "title": "I recently received an RFE and the deadline is approaching quickly. I am represented by Chen Attorney, but they have not responded, and I have called several times without receiving a response on my messages. Is anyone else currently experiencing similar communication delays?",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2ae6h/i_recently_received_an_rfe_and_the_deadline_is/",
@@ -454,26 +473,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1u28s6i",
-      "title": "I 140 wrong answer and fee",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u28s6i/i_140_wrong_answer_and_fee/",
-      "author": "/u/ExchangeMinimum",
-      "publishedAt": "2026-06-10T17:25:00+00:00",
-      "excerpt": "Please help. I provided the wrong answer NO to question 6. As a result, when I submitted my application online, I was charged $1315 instead of $1015. What can I do to receive the refund? Thanks!",
-      "topics": [
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
     }
   ],
-  "syncedAt": "2026-06-11T05:21:19.257Z",
+  "syncedAt": "2026-06-11T10:05:59.808Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
