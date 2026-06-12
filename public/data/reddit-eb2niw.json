@@ -98,6 +98,24 @@
       }
     },
     {
+      "id": "t3_1u3drfu",
+      "title": "For Recommendation Letter, only handwritten sign can be accepted?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3drfu/for_recommendation_letter_only_handwritten_sign/",
+      "author": "/u/Broad_One4686",
+      "publishedAt": "2026-06-11T22:37:27+00:00",
+      "excerpt": "My lawyer said like what I mentioned in Title. It could be so tired thing like print, write down the sign, and scan for PDF... How can I request those tired things to unknown recommenders... Is it really not acceptable anymore to use electronic sign?",
+      "topics": [
+        "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u35pw3",
       "title": "No updates nor green card 23 days since Case Approved - how can I get some insights on what's delaying it?",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u35pw3/no_updates_nor_green_card_23_days_since_case/",
@@ -117,14 +135,13 @@
       }
     },
     {
-      "id": "t3_1u3drfu",
-      "title": "For Recommendation Letter, only handwritten sign can be accepted?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3drfu/for_recommendation_letter_only_handwritten_sign/",
-      "author": "/u/Broad_One4686",
-      "publishedAt": "2026-06-11T22:37:27+00:00",
-      "excerpt": "My lawyer said like what I mentioned in Title. It could be so tired thing like print, write down the sign, and scan for PDF... How can I request those tired things to unknown recommenders... Is it really not acceptable anymore to use electronic sign?",
+      "id": "t3_1u3iuap",
+      "title": "NVC Wait times",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3iuap/nvc_wait_times/",
+      "author": "/u/ConstructionSharp798",
+      "publishedAt": "2026-06-12T02:30:56+00:00",
+      "excerpt": "The NVC has received my documents on April 8th and I still haven't gotten DQ yet is anyone else waiting a really long time and any idea why the wait?",
       "topics": [
-        "lawyer",
         "question"
       ],
       "signals": {
@@ -135,14 +152,16 @@
       }
     },
     {
-      "id": "t3_1u34yex",
-      "title": "Low citations are not the same as weak NIW evidence",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u34yex/low_citations_are_not_the_same_as_weak_niw/",
-      "author": "/u/Dapper-Ad-2100",
-      "publishedAt": "2026-06-11T17:06:23+00:00",
-      "excerpt": "A lot of NIW applicants panic about citation count. It matters, but it is not the whole case. Low citations can be a problem when the petition depends on research influence and there is no other proof that the work has reached anyone. But low citations are not automatically fatal. The real question is: What evidence sh…",
+      "id": "t3_1u3hdf6",
+      "title": "I-140 RFE - No Response from Chen",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3hdf6/i140_rfe_no_response_from_chen/",
+      "author": "/u/Opps-Boobs",
+      "publishedAt": "2026-06-12T01:19:51+00:00",
+      "excerpt": "I received an all 3 prong RFE on my NIW I-140. I promptly requested the letter from USCIS and forwarded it to Chen. At first, I got the usual templated response saying they would review it, assign an attorney, provide strategy, etc. Things started going downhill after that. After a week and a half and multiple follow-u…",
       "topics": [
         "i140",
+        "lawyer",
+        "timeline",
         "question"
       ],
       "signals": {
@@ -173,15 +192,14 @@
       }
     },
     {
-      "id": "t3_1u34ovt",
-      "title": "Rfe deadline approaching- Chen",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u34ovt/rfe_deadline_approaching_chen/",
-      "author": "/u/Weekly-Taste-4188",
-      "publishedAt": "2026-06-11T16:57:13+00:00",
-      "excerpt": "Chen sent recommendation letter template very late. The independent recommender said they'll provide it by 17th June. I have a rfe response deadline on 25th. Is there a way chen will use this recommendation letter, as recently they told it is too late and they'll work on response letter and personal statement finalizat…",
+      "id": "t3_1u34yex",
+      "title": "Low citations are not the same as weak NIW evidence",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u34yex/low_citations_are_not_the_same_as_weak_niw/",
+      "author": "/u/Dapper-Ad-2100",
+      "publishedAt": "2026-06-11T17:06:23+00:00",
+      "excerpt": "A lot of NIW applicants panic about citation count. It matters, but it is not the whole case. Low citations can be a problem when the petition depends on research influence and there is no other proof that the work has reached anyone. But low citations are not automatically fatal. The real question is: What evidence sh…",
       "topics": [
         "i140",
-        "lawyer",
         "question"
       ],
       "signals": {
@@ -217,7 +235,7 @@
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3dhir/after_gc_approval_how_are_you_follow_through_your/",
       "author": "/u/ivicts30",
       "publishedAt": "2026-06-11T22:25:41+00:00",
-      "excerpt": "&#x200B; View Poll",
+      "excerpt": "It is anonymous guys, do not worry! View Poll",
       "topics": [
         "approval",
         "question"
@@ -312,6 +330,25 @@
         "approval",
         "i140",
         "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u34ovt",
+      "title": "Rfe deadline approaching- Chen",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u34ovt/rfe_deadline_approaching_chen/",
+      "author": "/u/Weekly-Taste-4188",
+      "publishedAt": "2026-06-11T16:57:13+00:00",
+      "excerpt": "Chen sent recommendation letter template very late. The independent recommender said they'll provide it by 17th June. I have a rfe response deadline on 25th. Is there a way chen will use this recommendation letter, as recently they told it is too late and they'll work on response letter and personal statement finalizat…",
+      "topics": [
+        "i140",
+        "lawyer",
         "question"
       ],
       "signals": {
@@ -418,25 +455,6 @@
       }
     },
     {
-      "id": "t3_1u2n3dw",
-      "title": "EB2 NIW Help",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2n3dw/eb2_niw_help/",
-      "author": "/u/paypalme60cents",
-      "publishedAt": "2026-06-11T02:59:26+00:00",
-      "excerpt": "How beneficial is an attorney filed NIW? Chen and Ellis Porter have both rejected my profile. I do not have a master's degree but I have a bachelors with 5 years of experience. 3 years in architecting and deploying clinical AI systems (not coding but ideating the foundational and working logic), and 3.5 years in AI gov…",
-      "topics": [
-        "i140",
-        "lawyer",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
       "id": "t3_1u2aiw9",
       "title": "I-140 approved",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2aiw9/i140_approved/",
@@ -454,28 +472,9 @@
         "priorityDate": null,
         "mentionsCountry75": true
       }
-    },
-    {
-      "id": "t3_1u2r3os",
-      "title": "Ask opinion about OPT",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2r3os/ask_opinion_about_opt/",
-      "author": "/u/OkBanana2210",
-      "publishedAt": "2026-06-11T06:26:10+00:00",
-      "excerpt": "A friend of mine not on this platform, is on regular OPT, and filing for I-140 for NIW, he can’t make much and has to use delivery accounts. Would it be an issue later on for applying I-485? Thanks",
-      "topics": [
-        "i485",
-        "i140",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
     }
   ],
-  "syncedAt": "2026-06-11T23:14:22.636Z",
+  "syncedAt": "2026-06-12T02:36:26.698Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
