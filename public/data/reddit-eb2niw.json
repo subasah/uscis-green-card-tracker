@@ -55,6 +55,26 @@
       }
     },
     {
+      "id": "t3_1u3jo79",
+      "title": "Got my eb2 approved",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3jo79/got_my_eb2_approved/",
+      "author": "/u/mronix212",
+      "publishedAt": "2026-06-12T03:10:56+00:00",
+      "excerpt": "Guys, sharing my approval timeline since reading these posts kept me sane over the last few months. Given the climbing denial rates recently, I'm incredibly relieved to get the approval today. Timeline: PD: early Nov 25 Applied PP on 13 Apr 26 Got approval status on uscis on 9 Jun 26 (no RFE) Basic Profile: STEM acad r…",
+      "topics": [
+        "approval",
+        "i140",
+        "lawyer",
+        "timeline"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u3a9lv",
       "title": "Civil Engineering (Transportation Engineering Focus) I-140 Denied",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3a9lv/civil_engineering_transportation_engineering/",
@@ -72,6 +92,25 @@
         "blockNumber": null,
         "receiptDate": null,
         "priorityDate": "11/26/2024",
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u3lk81",
+      "title": "Any PP updates filed on April 21st RFE Response",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3lk81/any_pp_updates_filed_on_april_21st_rfe_response/",
+      "author": "/u/EmAndK",
+      "publishedAt": "2026-06-12T04:48:53+00:00",
+      "excerpt": "My case was filed April 21s. Try to estimate when to get the result. My profile is not that great so I’m assuming it’s moving toward denial? Block : IOE09346 Profile : Senior SWE (E5) at a Big 4 tech company in the AI division, MS in CS, ~9 years progressive experience across consulting, ML infrastructure, and AI priva…",
+      "topics": [
+        "i140",
+        "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": "IOE09346",
+        "receiptDate": null,
+        "priorityDate": null,
         "mentionsCountry75": false
       }
     },
@@ -105,6 +144,25 @@
       "publishedAt": "2026-06-11T22:37:27+00:00",
       "excerpt": "My lawyer said like what I mentioned in Title. It could be so tired thing like print, write down the sign, and scan for PDF... How can I request those tired things to unknown recommenders... Is it really not acceptable anymore to use electronic sign?",
       "topics": [
+        "lawyer",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u3kwlm",
+      "title": "I-140",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3kwlm/i140/",
+      "author": "/u/ForwardManagement598",
+      "publishedAt": "2026-06-12T04:14:12+00:00",
+      "excerpt": "I am working in the automotive industry. EP offers me only refile. I am not sure how much chance I have for NIW EB-2. Should I reconsider and start working on publishing papers, or should I trust the EP and sign the contract? I have no publications. I have only worked for 5 years in automation and more than 10 years in…",
+      "topics": [
+        "i140",
         "lawyer",
         "question"
       ],
@@ -192,6 +250,24 @@
       }
     },
     {
+      "id": "t3_1u30veb",
+      "title": "I-485 Interview: how do you know which additional documents to bring?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u30veb/i485_interview_how_do_you_know_which_additional/",
+      "author": "/u/Slight-Definition-52",
+      "publishedAt": "2026-06-11T14:37:12+00:00",
+      "excerpt": "So I heard from EMMA that they will be scheduling an interview and I just cannot figure out what my red flag is. Some of the things I can think of: 1) I lived in one of the 39 banned countries. There is a visa stamp to the country in one of the documentation I submitted (happened to be next to the US visa stamps). Not …",
+      "topics": [
+        "i485",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u34yex",
       "title": "Low citations are not the same as weak NIW evidence",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u34yex/low_citations_are_not_the_same_as_weak_niw/",
@@ -238,24 +314,6 @@
       "excerpt": "It is anonymous guys, do not worry! View Poll",
       "topics": [
         "approval",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u30veb",
-      "title": "I-485 Interview: how do you know which additional documents to bring?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u30veb/i485_interview_how_do_you_know_which_additional/",
-      "author": "/u/Slight-Definition-52",
-      "publishedAt": "2026-06-11T14:37:12+00:00",
-      "excerpt": "So I heard from EMMA that they will be scheduling an interview and I just cannot figure out what my red flag is. Some of the things I can think of: 1) I lived in one of the 39 banned countries. There is a visa stamp to the country in one of the documentation I submitted (happened to be next to the US visa stamps). Not …",
-      "topics": [
-        "i485",
         "question"
       ],
       "signals": {
@@ -414,67 +472,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1u2vt7j",
-      "title": "EB2 NIW info required for professional in agriculture",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2vt7j/eb2_niw_info_required_for_professional_in/",
-      "author": "/u/Grouchy_Sprinkles574",
-      "publishedAt": "2026-06-11T10:59:31+00:00",
-      "excerpt": "I’m starting to explore the EB-2 NIW route and am looking for examples of successful or active cases involving applicants with non-STEM backgrounds. My profile is more business/regulatory focused, with experience in agriculture and regulatory science rather than a traditional STEM degree. I’m curious whether anyone her…",
-      "topics": [
-        "approval",
-        "i140",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u29o22",
-      "title": "NIW I-140 Approved After RFE (National Importance & Prong 3)",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u29o22/niw_i140_approved_after_rfe_national_importance/",
-      "author": "/u/toomuchNLP",
-      "publishedAt": "2026-06-10T17:55:55+00:00",
-      "excerpt": "I wanted to share that my EB-2 NIW I-140 has been approved after responding to an RFE that challenged both Prong 1 (National Importance) and Prong 3. My proposed endeavor focuses on applying NLP and AI technologies to mental health. In the response, we strengthened the case with updated: Government reports Workforce sh…",
-      "topics": [
-        "approval",
-        "i140",
-        "lawyer",
-        "timeline"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u2aiw9",
-      "title": "I-140 approved",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u2aiw9/i140_approved/",
-      "author": "/u/Sea-Equivalent1727",
-      "publishedAt": "2026-06-10T18:25:48+00:00",
-      "excerpt": "NIW I-140 approved, No RFE Priority date: April 20, 2026, approval date June 10, 2026. Applied without any recommendation letters. Applied for premium processing straightaway Attorney: EP Profile: BSc in molecular biology and biotechnology MSc in cell biology PhD in medical genetics Postdoc in neurobiology (4 years exp…",
-      "topics": [
-        "approval",
-        "i140",
-        "lawyer"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": true
-      }
     }
   ],
-  "syncedAt": "2026-06-12T02:36:26.698Z",
+  "syncedAt": "2026-06-12T07:13:20.928Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
