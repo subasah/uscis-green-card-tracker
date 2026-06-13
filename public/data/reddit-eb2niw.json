@@ -54,6 +54,44 @@
       }
     },
     {
+      "id": "t3_1u4yetc",
+      "title": "EB-2 NIW AAO decision review",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u4yetc/eb2_niw_aao_decision_review/",
+      "author": "/u/Admirable-Weekend-11",
+      "publishedAt": "2026-06-13T18:30:24+00:00",
+      "excerpt": "Here is a recent AAO decision that focuses on prong two of Dhanasar. While the petitioner presented a strong proposed endeavor, they were found to not be well-positioned to pursue their proposed endeavor. Here is a link to a review of the AAO decision: https://immigrationjason.substack.com/p/eb-2-niw-aao-decision-revie…",
+      "topics": [
+        "i140"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u51hhh",
+      "title": "Timeline to receive reciept notice",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u51hhh/timeline_to_receive_reciept_notice/",
+      "author": "/u/ChemistryNo9348",
+      "publishedAt": "2026-06-13T20:36:43+00:00",
+      "excerpt": "Starting this journey finally. I filed I140, I485 and I765 concurrently. My attorney mailed out the package on June 11. How long is it taking to receive receipts these days? Profile clinical research professional with background in clinical trials, with MPH.",
+      "topics": [
+        "i485",
+        "i140",
+        "lawyer",
+        "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u4zrmi",
       "title": "-2 NIW I-485 Timeline – PD Feb 2024",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u4zrmi/2_niw_i485_timeline_pd_feb_2024/",
@@ -66,23 +104,6 @@
         "i140",
         "timeline",
         "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u4yetc",
-      "title": "EB-2 NIW AAO decision review",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u4yetc/eb2_niw_aao_decision_review/",
-      "author": "/u/Admirable-Weekend-11",
-      "publishedAt": "2026-06-13T18:30:24+00:00",
-      "excerpt": "Here is a recent AAO decision that focuses on prong two of Dhanasar. While the petitioner presented a strong proposed endeavor, they were found to not be well-positioned to pursue their proposed endeavor. Here is a link to a review of the AAO decision: https://immigrationjason.substack.com/p/eb-2-niw-aao-decision-revie…",
-      "topics": [
-        "i140"
       ],
       "signals": {
         "blockNumber": null,
@@ -112,17 +133,14 @@
       }
     },
     {
-      "id": "t3_1u51hhh",
-      "title": "Timeline to receive reciept notice",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u51hhh/timeline_to_receive_reciept_notice/",
-      "author": "/u/ChemistryNo9348",
-      "publishedAt": "2026-06-13T20:36:43+00:00",
-      "excerpt": "Starting this journey finally. I filed I140, I485 and I765 concurrently. My attorney mailed out the package on June 11. How long is it taking to receive receipts these days? Profile clinical research professional with background in clinical trials, with MPH.",
+      "id": "t3_1u52lm8",
+      "title": "Original Signatures vs Copies for AOS Package?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u52lm8/original_signatures_vs_copies_for_aos_package/",
+      "author": "/u/Upper-Finish202",
+      "publishedAt": "2026-06-13T21:24:09+00:00",
+      "excerpt": "Regarding signatures: Do you include the original signed documents in the package sent to USCIS, or do you submit copies and keep the originals in case USCIS requests them later (e.g., at an interview)? I know that for I-20s you should not send the originals, but what about Forms I-485, I-765, and I-131, cover letters,…",
       "topics": [
         "i485",
-        "i140",
-        "lawyer",
-        "timeline",
         "question"
       ],
       "signals": {
@@ -452,29 +470,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1u3xd33",
-      "title": "Seeking advice on EB2-NIW and OPT ending soon.",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3xd33/seeking_advice_on_eb2niw_and_opt_ending_soon/",
-      "author": "/u/MysteriousTeam2117",
-      "publishedAt": "2026-06-12T14:47:11+00:00",
-      "excerpt": "Seeking advice on EB2-NIW and OPT ending soon. Thank you in advance for your time in answering questions, and apologies for the lengthy post. My OPT expires on July 10th, 2026. I have paid for premium processing for EB2-NIW, and I should receive a response by the end of July at the latest. I have also prepared my AOS p…",
-      "topics": [
-        "approval",
-        "i485",
-        "i140",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": true
-      }
     }
   ],
-  "syncedAt": "2026-06-13T21:02:37.288Z",
+  "syncedAt": "2026-06-13T22:54:23.437Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
