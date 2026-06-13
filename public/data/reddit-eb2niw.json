@@ -205,23 +205,6 @@
       }
     },
     {
-      "id": "t3_1u4afr2",
-      "title": "how do you find independent reference letters if all your work's been inside one company?",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u4afr2/how_do_you_find_independent_reference_letters_if/",
-      "author": "/u/unmeosi",
-      "publishedAt": "2026-06-12T23:00:31+00:00",
-      "excerpt": "most of my strongest references are internal - managers, teammates, people i've actually shipped with. but i keep reading that the letters that carry real weight are the independent ones: someone respected in the field with no employment or co-authorship tie to you. the problem is my work isn't super public, so it's no…",
-      "topics": [
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
       "id": "t3_1u4aa7r",
       "title": "how did you actually decide between EB-1A and EB-2 NIW? feels like a coin flip",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u4aa7r/how_did_you_actually_decide_between_eb1a_and_eb2/",
@@ -470,9 +453,26 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
+    },
+    {
+      "id": "t3_1u42zz1",
+      "title": "Construction Infrastructure recommendation letter",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u42zz1/construction_infrastructure_recommendation_letter/",
+      "author": "/u/goodnews0505",
+      "publishedAt": "2026-06-12T18:09:07+00:00",
+      "excerpt": "Hello, I am trying to see if someone can give me a recommendation letter. For NIW EB2. I can provide all the backed up proofs for working on the projects and evidences with company skill letters. I would appreciate if someone can help me guide a little bit or can share their recommendation letters to take a reference. …",
+      "topics": [
+        "i140"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
     }
   ],
-  "syncedAt": "2026-06-13T09:51:03.456Z",
+  "syncedAt": "2026-06-13T11:47:14.835Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
