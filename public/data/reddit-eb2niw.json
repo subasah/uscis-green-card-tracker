@@ -35,6 +35,21 @@
       }
     },
     {
+      "id": "t3_1u54qqj",
+      "title": "Question",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u54qqj/question/",
+      "author": "/u/ExistingBicycle5679",
+      "publishedAt": "2026-06-13T23:00:59+00:00",
+      "excerpt": "I want to file I 485 based on employment based. I want to know that USCIS accepting the applications for I 485. I am currently on F1 visa and my wife and child on F2",
+      "topics": [],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
       "id": "t3_1u4wofn",
       "title": "RFE response guidance",
       "url": "https://www.reddit.com/r/EB2_NIW/comments/1u4wofn/rfe_response_guidance/",
@@ -83,6 +98,43 @@
         "lawyer",
         "timeline",
         "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u55y0o",
+      "title": "Will a PhD in Corrosion Engineering hurt my I-140 (NIW) timeline due to low citation rates?",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u55y0o/will_a_phd_in_corrosion_engineering_hurt_my_i140/",
+      "author": "/u/amin_2718",
+      "publishedAt": "2026-06-13T23:57:35+00:00",
+      "excerpt": "Hi everyone, I’m looking for some advice on balancing a PhD with US immigration timelines. I just wrapped up my Master’s in the US focusing on corrosion engineering. It's a great field, but it’s nowhere near as flashy as AI or energy storage, meaning that getting citations is really tough. I published a paper a year ag…",
+      "topics": [
+        "approval",
+        "i140",
+        "timeline",
+        "question"
+      ],
+      "signals": {
+        "blockNumber": null,
+        "receiptDate": null,
+        "priorityDate": null,
+        "mentionsCountry75": false
+      }
+    },
+    {
+      "id": "t3_1u550ec",
+      "title": "Seeking help to review my RFE response strategy",
+      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u550ec/seeking_help_to_review_my_rfe_response_strategy/",
+      "author": "/u/Worried_Win_2478",
+      "publishedAt": "2026-06-13T23:13:16+00:00",
+      "excerpt": "Got all RFE’s on all 3 prongs & created evidence map. Looking for help from experts to take a look & provide feedback to make sure their no gaps",
+      "topics": [
+        "i140"
       ],
       "signals": {
         "blockNumber": null,
@@ -412,67 +464,9 @@
         "priorityDate": null,
         "mentionsCountry75": false
       }
-    },
-    {
-      "id": "t3_1u40fjs",
-      "title": "Before choosing an NIW lawyer, ask them to explain your weakest prong",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u40fjs/before_choosing_an_niw_lawyer_ask_them_to_explain/",
-      "author": "/u/Dapper-Ad-2100",
-      "publishedAt": "2026-06-12T16:36:28+00:00",
-      "excerpt": "A lot of people choose an NIW lawyer based on the wrong signal. They look for: famous firm name refund offer fast response time high approval claims someone who says \"strong profile\" Those things can matter, but they do not tell you whether the strategy is good. The better test is simple: Can the lawyer explain your we…",
-      "topics": [
-        "approval",
-        "i140",
-        "lawyer",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u3jo79",
-      "title": "Got my eb2 approved",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u3jo79/got_my_eb2_approved/",
-      "author": "/u/mronix212",
-      "publishedAt": "2026-06-12T03:10:56+00:00",
-      "excerpt": "Guys, sharing my approval timeline since reading these posts kept me sane over the last few months. Given the climbing denial rates recently, I'm incredibly relieved to get the approval today. Timeline: PD: early Nov 25 Applied PP on 13 Apr 26 Got approval status on uscis on 9 Jun 26 (no RFE) Basic Profile: STEM acad r…",
-      "topics": [
-        "approval",
-        "i140",
-        "lawyer",
-        "timeline"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
-    },
-    {
-      "id": "t3_1u48xi4",
-      "title": "Should I do PP for I-140",
-      "url": "https://www.reddit.com/r/EB2_NIW/comments/1u48xi4/should_i_do_pp_for_i140/",
-      "author": "/u/taj1544",
-      "publishedAt": "2026-06-12T21:57:23+00:00",
-      "excerpt": "I am from one of the 39 banned countries. My date of filing is 01/2025.",
-      "topics": [
-        "i140",
-        "question"
-      ],
-      "signals": {
-        "blockNumber": null,
-        "receiptDate": null,
-        "priorityDate": null,
-        "mentionsCountry75": false
-      }
     }
   ],
-  "syncedAt": "2026-06-13T22:54:23.437Z",
+  "syncedAt": "2026-06-13T23:58:16.357Z",
   "sourceUrl": "https://www.reddit.com/r/EB2_NIW/",
   "feedUrl": "https://www.reddit.com/r/EB2_NIW/.rss",
   "postCount": 25
